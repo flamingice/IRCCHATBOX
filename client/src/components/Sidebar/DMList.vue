@@ -42,10 +42,12 @@
       >
         <h3 class="text-sm font-semibold mb-2">New DM</h3>
         <input
+            ref="newDMInput"
             v-model="newDMUser"
             type="text"
             placeholder="e.g. alice"
             class="w-full px-2 py-1 border rounded mb-2 text-sm"
+            @keyup.enter="createDM"
         />
         <div class="flex flex-col">
           <div class="flex justify-end gap-2">
@@ -62,7 +64,7 @@
 </template>
 
 <script setup>
-import {ref, onMounted, computed} from 'vue';
+import { ref, onMounted, computed, nextTick } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import api from '@/services/api';
 import { setLastViewed, hasUnread } from '@/helpers/storage';
@@ -75,6 +77,7 @@ const showDMs = ref(true);
 const showDMPopover = ref(false);
 const activeUser = computed(() => route.params.user);
 const newDMUser = ref('');
+const newDMInput = ref(null);
 const latestDMTimestamps = ref({});
 const errorMessage = ref('');
 
@@ -101,8 +104,13 @@ const goToDM = (user) => {
   router.push(`/dm/${user}`);
 };
 
-const toggleDMPopover = () => {
+const toggleDMPopover = async () => {
   showDMPopover.value = !showDMPopover.value;
+
+  if (showDMPopover.value) {
+    await nextTick(); // wait for DOM to update
+    newDMInput.value?.focus();
+  }
 };
 
 const hideDMPopover = () => {

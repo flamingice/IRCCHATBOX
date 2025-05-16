@@ -43,10 +43,12 @@
       >
         <h3 class="text-sm font-semibold mb-2">New Channel</h3>
         <input
+            ref="newChannelInput"
             v-model="newChannelName"
             type="text"
             placeholder="e.g. news"
             class="w-full px-2 py-1 border rounded mb-2 text-sm"
+            @keyup.enter="createChannel"
         />
         <div class="flex flex-col">
           <div class="flex justify-end gap-2">
@@ -63,7 +65,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, computed, defineExpose } from 'vue';
+import { ref, onMounted, computed, defineExpose, nextTick } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import api from '@/services/api';
 import { setLastViewed, hasUnread } from '@/helpers/storage';
@@ -77,6 +79,7 @@ const activeChannel = computed(() => route.params.name);
 const showChannels = ref(true);
 const showPopover = ref(false);
 const newChannelName = ref('');
+const newChannelInput = ref(null);
 const errorMessage = ref('');
 
 const fetchChannels = async () => {
@@ -102,8 +105,13 @@ const goToChannel = (name) => {
   router.push(`/channel/${name}`);
 };
 
-const togglePopover = () => {
+const togglePopover = async () => {
   showPopover.value = !showPopover.value;
+
+  if (showPopover.value) {
+    await nextTick(); // wait for DOM to update
+    newChannelInput.value?.focus();
+  }
 };
 
 defineExpose({

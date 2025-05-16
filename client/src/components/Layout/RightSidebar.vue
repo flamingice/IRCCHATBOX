@@ -1,5 +1,5 @@
 <template>
-  <div class="w-64 border-l p-4 bg-white overflow-y-auto text-sm">
+  <div class="w-1/5 border-l p-4 bg-white overflow-y-auto text-sm">
     <h3 class="text-sm font-semibold mb-4 text-gray-800">
       {{ totalUsers }} users online
     </h3>

@@ -1,5 +1,5 @@
 <template>
-  <div ref="chatContainer"  class="flex-1 max-w-3xl overflow-y-auto pt-0 pr-4 pb-4 pl-4 space-y-4 bg-white text-sm">
+  <div class="space-y-4 bg-white text-sm w-full">
     <h2 class="text-lg font-semibold mb-4 sticky top-0 bg-white z-10 py-2">
       #{{ channelName }}
     </h2>
@@ -21,12 +21,11 @@
 </template>
 
 <script setup>
-import { computed, ref, watch, nextTick } from 'vue';
+import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 import { format } from 'date-fns';
 
 const props = defineProps(['messages']);
-const chatContainer = ref(null);
 const route = useRoute();
 
 const channelName = computed(() => route.params.name);
@@ -34,23 +33,10 @@ const channelName = computed(() => route.params.name);
 const formatTime = (timestamp) => {
   try {
     const parsed = new Date(timestamp);
-    return format(parsed, 'MMM d, h:mm a'); // e.g. May 14, 10:42 AM
+    return format(parsed, 'MMM d, h:mm a');
   } catch {
     return timestamp;
   }
 };
 
-watch(
-    () => props.messages.length,
-    async () => {
-      await nextTick();
-      scrollToBottom();
-    }
-);
-
-function scrollToBottom() {
-  const el = chatContainer.value;
-  if (!el) return;
-  el.scrollTop = el.scrollHeight;
-}
 </script>
