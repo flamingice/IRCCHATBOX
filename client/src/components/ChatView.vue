@@ -9,13 +9,21 @@
         :key="index"
         class="flex flex-col gap-1 py-2 px-2 hover:bg-gray-50 rounded transition"
     >
-      <div class="flex items-center gap-2">
-        <span class="font-medium text-blue-800">{{ msg.user }}</span>
-        <span class="text-xs text-gray-400">{{ formatTime(msg.timestamp) }}</span>
-      </div>
-      <div class="ml-4 text-gray-800">
+      <!-- System message styling -->
+      <div v-if="msg.user === 'system'" class="text-center text-xs text-gray-500 italic">
         {{ msg.text }}
       </div>
+
+      <!-- Regular user message styling -->
+      <template v-else>
+        <div class="flex items-center gap-2">
+          <span class="font-medium text-blue-800 cursor-pointer">{{ msg.user }}</span>
+          <span class="text-xs text-gray-400">{{ formatTime(msg.timestamp) }}</span>
+        </div>
+        <div class="ml-4 text-gray-800">
+          {{ msg.text }}
+        </div>
+      </template>
     </div>
   </div>
 </template>
