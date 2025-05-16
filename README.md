@@ -106,9 +106,6 @@ A: In plain `.log` files on disk.
 
 ---
 
-## 👨‍💻 Author
-Built with ❤️ by [Your Name] — powered by Vue 3 and Node.js.
-
 ---
 
 ## 📜 License
