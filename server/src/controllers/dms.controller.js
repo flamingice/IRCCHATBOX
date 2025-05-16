@@ -94,7 +94,7 @@ export const postDM = (req, res) => {
     const line = formatMessageLine(sender, timestamp, text);
 
     try {
-        fs.appendFileSync(filePath, line + '\n', 'utf-8');
+        fs.appendFileSync(filePath, '\n' + line + '\n', 'utf-8');
         res.status(201).json({ success: true });
     } catch {
         res.status(500).json({ error: 'Failed to write to DM file.' });

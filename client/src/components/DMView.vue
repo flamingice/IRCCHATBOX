@@ -1,7 +1,7 @@
 <template>
   <div ref="chatContainer" class="flex-1 max-w-3xl overflow-y-auto pt-0 pr-4 pb-4 pl-4 space-y-4 bg-white text-sm">
     <h2 class="text-lg font-semibold mb-4 sticky top-0 bg-white z-10 py-2">
-      #{{ username }} !!
+      #{{ username }}
     </h2>
 
     <div

@@ -4,10 +4,11 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-COPY server/package*.json ./
+# We're already in server/ directory due to build context
+COPY package*.json ./
 RUN npm install
 
-COPY server .
+COPY . .
 
 EXPOSE 3550
 CMD ["node", "server.js"]
