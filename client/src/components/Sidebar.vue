@@ -1,5 +1,5 @@
 <template>
-  <div class="w-1/5 h-full border-r bg-gray-100 p-4 flex flex-col relative">
+  <div class="h-full border-r bg-gray-100 p-4 flex flex-col relative">
     <ChannelList v-if="isChannelView" />
     <DMList v-else-if="isDMView" />
   </div>

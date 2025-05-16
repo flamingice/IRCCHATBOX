@@ -7,7 +7,7 @@
     <div
         v-for="(msg, index) in messages"
         :key="index"
-        class="flex flex-col gap-1 py-2 px-2 hover:bg-gray-50 rounded transition"
+        class="flex flex-col gap-1 px-2 hover:bg-gray-50 rounded transition"
     >
       <!-- System message styling -->
       <div v-if="msg.user === 'system'" class="text-center text-xs text-gray-500 italic">
