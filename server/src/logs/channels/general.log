@@ -1,0 +1,551 @@
+{"user": "katniss", "timestamp": "2025-02-15 10:31", "text": "I\u2019m OOO tomorrow but reachable by email."}
+{"user": "alex", "timestamp": "2025-02-15 10:34", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"user": "leia", "timestamp": "2025-02-15 10:42", "text": "Feel free to drop playlist recs in #music!"}
+{"user": "neo", "timestamp": "2025-02-15 10:54", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "frodo", "timestamp": "2025-02-15 11:01", "text": "Can someone review my PR before EOD?"}
+{"user": "trinity", "timestamp": "2025-02-15 11:13", "text": "Zoom is laggy again\u2014switching to Meet."}
+{"user": "nina", "timestamp": "2025-02-15 11:19", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "neo", "timestamp": "2025-02-15 11:25", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"user": "leia", "timestamp": "2025-02-15 11:35", "text": "Reminder: All timesheets are due today \u23f0"}
+{"user": "frodo", "timestamp": "2025-02-15 11:38", "text": "Lunch break! \ud83e\udd57 Back in 30."}
+{"user": "alex", "timestamp": "2025-02-15 11:44", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"user": "alex", "timestamp": "2025-02-15 11:51", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "vito", "timestamp": "2025-02-15 12:03", "text": "We should do a virtual coffee hangout soon \u2615"}
+{"user": "frodo", "timestamp": "2025-02-15 12:05", "text": "Had a blast at yesterday\u2019s demo session \ud83c\udf89"}
+{"type": "system", "user": "system", "timestamp": "2025-02-15 12:10", "text": "joker signed off."}
+{"type": "system", "user": "system", "timestamp": "2025-02-15 12:20", "text": "katniss left the workspace."}
+{"user": "trinity", "timestamp": "2025-02-15 12:25", "text": "Started using Notion again. Missed this!"}
+{"user": "frodo", "timestamp": "2025-02-15 12:30", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "grace", "timestamp": "2025-02-15 12:37", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "tyler", "timestamp": "2025-02-15 12:42", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"user": "neo", "timestamp": "2025-02-15 12:46", "text": "Love how clean the new nav looks!"}
+{"type": "system", "user": "system", "timestamp": "2025-02-15 12:52", "text": "djmax left the workspace."}
+{"user": "rocknrolla", "timestamp": "2025-02-15 12:54", "text": "Props to @grace for handling that client call like a pro! \ud83d\udc4f"}
+{"user": "frodo", "timestamp": "2025-02-15 13:00", "text": "Huddle up for a quick sync?"}
+{"user": "trinity", "timestamp": "2025-02-15 13:11", "text": "Anyone else having issues with staging?"}
+{"user": "rocknrolla", "timestamp": "2025-02-15 13:13", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "nina", "timestamp": "2025-02-15 13:22", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "grace", "timestamp": "2025-02-15 13:26", "text": "Testing Stripe integration now\u2014will confirm in 15."}
+{"user": "emily", "timestamp": "2025-02-15 13:37", "text": "Dark mode toggle is live \ud83d\udd25"}
+{"user": "katniss", "timestamp": "2025-02-15 13:41", "text": "Updated the docs with the latest changes \ud83d\udcc4"}
+{"user": "rocknrolla", "timestamp": "2025-02-15 13:46", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"user": "tyler", "timestamp": "2025-02-15 13:48", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"user": "rocknrolla", "timestamp": "2025-02-15 13:55", "text": "Dark mode toggle is live \ud83d\udd25"}
+{"user": "alex", "timestamp": "2025-02-15 13:57", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "frodo", "timestamp": "2025-02-15 14:05", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "nina", "timestamp": "2025-02-15 14:17", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "joker", "timestamp": "2025-02-15 14:21", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "alex", "timestamp": "2025-02-15 14:23", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "trinity", "timestamp": "2025-02-15 14:33", "text": "Can someone review my PR before EOD?"}
+{"user": "djmax", "timestamp": "2025-02-15 14:38", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"user": "rocknrolla", "timestamp": "2025-02-15 14:47", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "joker", "timestamp": "2025-02-15 14:50", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"user": "joker", "timestamp": "2025-02-15 15:00", "text": "Anyone else having issues with staging?"}
+{"user": "alex", "timestamp": "2025-02-15 15:12", "text": "Lunch break! \ud83e\udd57 Back in 30."}
+{"user": "katniss", "timestamp": "2025-02-15 15:15", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "nina", "timestamp": "2025-02-15 15:21", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"user": "sarah", "timestamp": "2025-02-15 15:24", "text": "Had a blast at yesterday\u2019s demo session \ud83c\udf89"}
+{"user": "joker", "timestamp": "2025-02-15 15:34", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "nina", "timestamp": "2025-02-15 15:44", "text": "We should do a virtual coffee hangout soon \u2615"}
+{"user": "trinity", "timestamp": "2025-02-15 15:53", "text": "Started using Notion again. Missed this!"}
+{"user": "frodo", "timestamp": "2025-02-15 16:01", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"user": "alex", "timestamp": "2025-02-15 16:06", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"user": "katniss", "timestamp": "2025-02-15 16:14", "text": "Huddle up for a quick sync?"}
+{"type": "system", "user": "system", "timestamp": "2025-02-15 16:17", "text": "katniss joined the workspace."}
+{"type": "system", "user": "system", "timestamp": "2025-02-15 16:19", "text": "frodo left the workspace."}
+{"user": "rocknrolla", "timestamp": "2025-02-15 16:23", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"user": "trinity", "timestamp": "2025-02-15 16:34", "text": "I\u2019m OOO tomorrow but reachable by email."}
+{"user": "vito", "timestamp": "2025-02-15 16:37", "text": "Feel free to drop playlist recs in #music!"}
+{"user": "sarah", "timestamp": "2025-02-15 16:41", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"type": "system", "user": "system", "timestamp": "2025-02-15 16:47", "text": "neo left the workspace."}
+{"user": "leia", "timestamp": "2025-02-15 16:58", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"type": "system", "user": "system", "timestamp": "2025-02-15 17:05", "text": "alex is back online."}
+{"user": "joker", "timestamp": "2025-02-15 17:09", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"user": "leia", "timestamp": "2025-02-15 17:21", "text": "Can someone review my PR before EOD?"}
+{"user": "djmax", "timestamp": "2025-02-15 17:31", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "nina", "timestamp": "2025-02-15 17:43", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "vito", "timestamp": "2025-02-15 17:49", "text": "Huddle up for a quick sync?"}
+{"user": "frodo", "timestamp": "2025-02-15 17:51", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"type": "system", "user": "system", "timestamp": "2025-02-15 17:54", "text": "emily left the workspace."}
+{"user": "sarah", "timestamp": "2025-02-15 18:05", "text": "Can someone review my PR before EOD?"}
+{"user": "trinity", "timestamp": "2025-02-15 18:10", "text": "Props to @grace for handling that client call like a pro! \ud83d\udc4f"}
+{"user": "emily", "timestamp": "2025-02-15 18:14", "text": "Had a blast at yesterday\u2019s demo session \ud83c\udf89"}
+{"type": "system", "user": "system", "timestamp": "2025-02-15 18:16", "text": "djmax changed their status to away."}
+{"user": "djmax", "timestamp": "2025-02-15 18:23", "text": "Updated the docs with the latest changes \ud83d\udcc4"}
+{"user": "nina", "timestamp": "2025-02-15 18:33", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "sarah", "timestamp": "2025-02-15 18:45", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"user": "neo", "timestamp": "2025-02-15 18:49", "text": "Feel free to drop playlist recs in #music!"}
+{"user": "rocknrolla", "timestamp": "2025-02-15 19:00", "text": "Anyone else having issues with staging?"}
+{"user": "grace", "timestamp": "2025-02-15 19:04", "text": "Props to @grace for handling that client call like a pro! \ud83d\udc4f"}
+{"user": "vito", "timestamp": "2025-02-15 19:12", "text": "Had a blast at yesterday\u2019s demo session \ud83c\udf89"}
+{"user": "joker", "timestamp": "2025-02-15 19:15", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"user": "frodo", "timestamp": "2025-02-15 19:23", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "emily", "timestamp": "2025-02-15 19:31", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "alex", "timestamp": "2025-02-15 19:35", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "frodo", "timestamp": "2025-02-15 19:42", "text": "Zoom is laggy again\u2014switching to Meet."}
+{"user": "leia", "timestamp": "2025-02-15 19:48", "text": "Updated the docs with the latest changes \ud83d\udcc4"}
+{"user": "emily", "timestamp": "2025-02-15 19:56", "text": "I\u2019m OOO tomorrow but reachable by email."}
+{"user": "djmax", "timestamp": "2025-02-15 20:08", "text": "Had a blast at yesterday\u2019s demo session \ud83c\udf89"}
+{"user": "vito", "timestamp": "2025-02-15 20:18", "text": "I\u2019m OOO tomorrow but reachable by email."}
+{"user": "trinity", "timestamp": "2025-02-15 20:24", "text": "Reminder: All timesheets are due today \u23f0"}
+{"user": "frodo", "timestamp": "2025-02-15 20:30", "text": "Love how clean the new nav looks!"}
+{"type": "system", "user": "system", "timestamp": "2025-02-15 20:32", "text": "neo left the workspace."}
+{"user": "tyler", "timestamp": "2025-02-15 20:42", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"user": "djmax", "timestamp": "2025-02-15 20:49", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "neo", "timestamp": "2025-02-15 20:56", "text": "Reminder: All timesheets are due today \u23f0"}
+{"user": "sarah", "timestamp": "2025-02-15 21:08", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"user": "frodo", "timestamp": "2025-02-15 21:12", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"type": "system", "user": "system", "timestamp": "2025-02-15 21:21", "text": "leia joined the workspace."}
+{"user": "katniss", "timestamp": "2025-02-15 21:32", "text": "Props to @grace for handling that client call like a pro! \ud83d\udc4f"}
+{"user": "frodo", "timestamp": "2025-02-15 21:37", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"user": "alex", "timestamp": "2025-02-15 21:40", "text": "Love how clean the new nav looks!"}
+{"user": "leia", "timestamp": "2025-02-15 21:47", "text": "Can someone review my PR before EOD?"}
+{"user": "nina", "timestamp": "2025-02-15 21:52", "text": "Updated the docs with the latest changes \ud83d\udcc4"}
+{"user": "vito", "timestamp": "2025-02-15 21:56", "text": "Zoom is laggy again\u2014switching to Meet."}
+{"type": "system", "user": "system", "timestamp": "2025-02-15 22:08", "text": "frodo signed off."}
+{"user": "emily", "timestamp": "2025-02-15 22:15", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"type": "system", "user": "system", "timestamp": "2025-02-15 22:18", "text": "joker joined the workspace."}
+{"user": "joker", "timestamp": "2025-02-15 22:28", "text": "Zoom is laggy again\u2014switching to Meet."}
+{"user": "emily", "timestamp": "2025-02-15 22:34", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"user": "neo", "timestamp": "2025-02-15 22:42", "text": "Had a blast at yesterday\u2019s demo session \ud83c\udf89"}
+{"user": "frodo", "timestamp": "2025-02-15 22:54", "text": "Huddle up for a quick sync?"}
+{"type": "system", "user": "system", "timestamp": "2025-02-15 22:57", "text": "alex changed their status to away."}
+{"type": "system", "user": "system", "timestamp": "2025-02-15 23:09", "text": "leia is back online."}
+{"user": "trinity", "timestamp": "2025-02-15 23:17", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "emily", "timestamp": "2025-02-15 23:25", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "leia", "timestamp": "2025-02-15 23:29", "text": "We should do a virtual coffee hangout soon \u2615"}
+{"user": "rocknrolla", "timestamp": "2025-02-15 23:41", "text": "Anyone else having issues with staging?"}
+{"user": "joker", "timestamp": "2025-02-15 23:44", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "grace", "timestamp": "2025-02-15 23:47", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "trinity", "timestamp": "2025-02-15 23:52", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"type": "system", "user": "system", "timestamp": "2025-02-15 23:56", "text": "trinity reconnected."}
+{"user": "djmax", "timestamp": "2025-02-16 00:07", "text": "Lunch break! \ud83e\udd57 Back in 30."}
+{"user": "alex", "timestamp": "2025-02-16 00:10", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"user": "neo", "timestamp": "2025-02-16 00:12", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 00:19", "text": "leia reconnected."}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 00:25", "text": "nina joined the workspace."}
+{"user": "emily", "timestamp": "2025-02-16 00:33", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "sarah", "timestamp": "2025-02-16 00:36", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "tyler", "timestamp": "2025-02-16 00:46", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"user": "sarah", "timestamp": "2025-02-16 00:51", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 01:01", "text": "vito is back online."}
+{"user": "grace", "timestamp": "2025-02-16 01:12", "text": "Feel free to drop playlist recs in #music!"}
+{"user": "sarah", "timestamp": "2025-02-16 01:17", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "sarah", "timestamp": "2025-02-16 01:27", "text": "Reminder: All timesheets are due today \u23f0"}
+{"user": "rocknrolla", "timestamp": "2025-02-16 01:36", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 01:40", "text": "frodo is back online."}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 01:42", "text": "grace changed their status to away."}
+{"user": "vito", "timestamp": "2025-02-16 01:49", "text": "Testing Stripe integration now\u2014will confirm in 15."}
+{"user": "leia", "timestamp": "2025-02-16 01:51", "text": "We should do a virtual coffee hangout soon \u2615"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 01:57", "text": "frodo left the workspace."}
+{"user": "rocknrolla", "timestamp": "2025-02-16 02:09", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"user": "tyler", "timestamp": "2025-02-16 02:21", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "leia", "timestamp": "2025-02-16 02:23", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "emily", "timestamp": "2025-02-16 02:26", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 02:29", "text": "neo is back online."}
+{"user": "frodo", "timestamp": "2025-02-16 02:41", "text": "Started using Notion again. Missed this!"}
+{"user": "trinity", "timestamp": "2025-02-16 02:47", "text": "Feel free to drop playlist recs in #music!"}
+{"user": "nina", "timestamp": "2025-02-16 02:55", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"user": "trinity", "timestamp": "2025-02-16 02:59", "text": "Anyone else having issues with staging?"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 03:09", "text": "tyler signed off."}
+{"user": "sarah", "timestamp": "2025-02-16 03:17", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "nina", "timestamp": "2025-02-16 03:26", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "grace", "timestamp": "2025-02-16 03:38", "text": "We should do a virtual coffee hangout soon \u2615"}
+{"user": "joker", "timestamp": "2025-02-16 03:43", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "neo", "timestamp": "2025-02-16 03:55", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "vito", "timestamp": "2025-02-16 04:03", "text": "Dark mode toggle is live \ud83d\udd25"}
+{"user": "alex", "timestamp": "2025-02-16 04:05", "text": "Feel free to drop playlist recs in #music!"}
+{"user": "emily", "timestamp": "2025-02-16 04:12", "text": "Love how clean the new nav looks!"}
+{"user": "grace", "timestamp": "2025-02-16 04:16", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "alex", "timestamp": "2025-02-16 04:25", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"user": "leia", "timestamp": "2025-02-16 04:35", "text": "Testing Stripe integration now\u2014will confirm in 15."}
+{"user": "frodo", "timestamp": "2025-02-16 04:41", "text": "I\u2019m OOO tomorrow but reachable by email."}
+{"user": "leia", "timestamp": "2025-02-16 04:46", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "trinity", "timestamp": "2025-02-16 04:49", "text": "Huddle up for a quick sync?"}
+{"user": "nina", "timestamp": "2025-02-16 04:59", "text": "We should do a virtual coffee hangout soon \u2615"}
+{"user": "vito", "timestamp": "2025-02-16 05:05", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "nina", "timestamp": "2025-02-16 05:09", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "rocknrolla", "timestamp": "2025-02-16 05:12", "text": "Props to @grace for handling that client call like a pro! \ud83d\udc4f"}
+{"user": "rocknrolla", "timestamp": "2025-02-16 05:18", "text": "Testing Stripe integration now\u2014will confirm in 15."}
+{"user": "joker", "timestamp": "2025-02-16 05:29", "text": "I\u2019m OOO tomorrow but reachable by email."}
+{"user": "katniss", "timestamp": "2025-02-16 05:37", "text": "Anyone else having issues with staging?"}
+{"user": "joker", "timestamp": "2025-02-16 05:47", "text": "Huddle up for a quick sync?"}
+{"user": "joker", "timestamp": "2025-02-16 05:57", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "joker", "timestamp": "2025-02-16 06:04", "text": "Deploy happening in 5... 4... 3..."}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 06:09", "text": "joker changed their status to away."}
+{"user": "alex", "timestamp": "2025-02-16 06:13", "text": "Reminder: All timesheets are due today \u23f0"}
+{"user": "vito", "timestamp": "2025-02-16 06:21", "text": "Anyone else having issues with staging?"}
+{"user": "katniss", "timestamp": "2025-02-16 06:30", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "vito", "timestamp": "2025-02-16 06:35", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "djmax", "timestamp": "2025-02-16 06:41", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "sarah", "timestamp": "2025-02-16 06:45", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "neo", "timestamp": "2025-02-16 06:57", "text": "Love how clean the new nav looks!"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 07:00", "text": "frodo reconnected."}
+{"user": "nina", "timestamp": "2025-02-16 07:02", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 07:04", "text": "sarah joined the workspace."}
+{"user": "nina", "timestamp": "2025-02-16 07:15", "text": "We should do a virtual coffee hangout soon \u2615"}
+{"user": "grace", "timestamp": "2025-02-16 07:23", "text": "Anyone else having issues with staging?"}
+{"user": "tyler", "timestamp": "2025-02-16 07:25", "text": "Can someone review my PR before EOD?"}
+{"user": "alex", "timestamp": "2025-02-16 07:33", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"user": "sarah", "timestamp": "2025-02-16 07:37", "text": "Feel free to drop playlist recs in #music!"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 07:46", "text": "neo is back online."}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 07:49", "text": "djmax left the workspace."}
+{"user": "trinity", "timestamp": "2025-02-16 07:52", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "joker", "timestamp": "2025-02-16 07:55", "text": "Updated the docs with the latest changes \ud83d\udcc4"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 08:04", "text": "grace left the workspace."}
+{"user": "grace", "timestamp": "2025-02-16 08:15", "text": "Dark mode toggle is live \ud83d\udd25"}
+{"user": "alex", "timestamp": "2025-02-16 08:21", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "alex", "timestamp": "2025-02-16 08:24", "text": "Can someone review my PR before EOD?"}
+{"user": "vito", "timestamp": "2025-02-16 08:27", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"user": "nina", "timestamp": "2025-02-16 08:39", "text": "We should do a virtual coffee hangout soon \u2615"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 08:42", "text": "joker left the workspace."}
+{"user": "tyler", "timestamp": "2025-02-16 08:47", "text": "Dark mode toggle is live \ud83d\udd25"}
+{"user": "nina", "timestamp": "2025-02-16 08:55", "text": "Anyone else having issues with staging?"}
+{"user": "neo", "timestamp": "2025-02-16 08:59", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "nina", "timestamp": "2025-02-16 09:04", "text": "Huddle up for a quick sync?"}
+{"user": "vito", "timestamp": "2025-02-16 09:09", "text": "Love how clean the new nav looks!"}
+{"user": "djmax", "timestamp": "2025-02-16 09:20", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"user": "djmax", "timestamp": "2025-02-16 09:25", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "emily", "timestamp": "2025-02-16 09:32", "text": "Zoom is laggy again\u2014switching to Meet."}
+{"user": "frodo", "timestamp": "2025-02-16 09:44", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "neo", "timestamp": "2025-02-16 09:46", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "joker", "timestamp": "2025-02-16 09:51", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "grace", "timestamp": "2025-02-16 09:55", "text": "Zoom is laggy again\u2014switching to Meet."}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 09:59", "text": "leia signed off."}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 10:06", "text": "rocknrolla left the workspace."}
+{"user": "katniss", "timestamp": "2025-02-16 10:15", "text": "Testing Stripe integration now\u2014will confirm in 15."}
+{"user": "rocknrolla", "timestamp": "2025-02-16 10:18", "text": "Testing Stripe integration now\u2014will confirm in 15."}
+{"user": "vito", "timestamp": "2025-02-16 10:24", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "tyler", "timestamp": "2025-02-16 10:28", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "emily", "timestamp": "2025-02-16 10:39", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "tyler", "timestamp": "2025-02-16 10:49", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "grace", "timestamp": "2025-02-16 10:51", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"user": "djmax", "timestamp": "2025-02-16 10:58", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"user": "vito", "timestamp": "2025-02-16 11:05", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 11:10", "text": "tyler changed their status to away."}
+{"user": "rocknrolla", "timestamp": "2025-02-16 11:21", "text": "Testing Stripe integration now\u2014will confirm in 15."}
+{"user": "frodo", "timestamp": "2025-02-16 11:27", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "neo", "timestamp": "2025-02-16 11:32", "text": "Can someone review my PR before EOD?"}
+{"user": "vito", "timestamp": "2025-02-16 11:43", "text": "Feel free to drop playlist recs in #music!"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 11:53", "text": "sarah left the workspace."}
+{"user": "emily", "timestamp": "2025-02-16 12:01", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "vito", "timestamp": "2025-02-16 12:10", "text": "Anyone else having issues with staging?"}
+{"user": "nina", "timestamp": "2025-02-16 12:21", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "joker", "timestamp": "2025-02-16 12:23", "text": "Anyone else having issues with staging?"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 12:27", "text": "sarah signed off."}
+{"user": "frodo", "timestamp": "2025-02-16 12:33", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "djmax", "timestamp": "2025-02-16 12:44", "text": "Updated the docs with the latest changes \ud83d\udcc4"}
+{"user": "djmax", "timestamp": "2025-02-16 12:54", "text": "Anyone else having issues with staging?"}
+{"user": "tyler", "timestamp": "2025-02-16 12:57", "text": "Can someone review my PR before EOD?"}
+{"user": "alex", "timestamp": "2025-02-16 13:07", "text": "We should do a virtual coffee hangout soon \u2615"}
+{"user": "tyler", "timestamp": "2025-02-16 13:19", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"user": "leia", "timestamp": "2025-02-16 13:27", "text": "Dark mode toggle is live \ud83d\udd25"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 13:36", "text": "emily reconnected."}
+{"user": "neo", "timestamp": "2025-02-16 13:47", "text": "We should do a virtual coffee hangout soon \u2615"}
+{"user": "alex", "timestamp": "2025-02-16 13:51", "text": "Love how clean the new nav looks!"}
+{"user": "trinity", "timestamp": "2025-02-16 13:56", "text": "Reminder: All timesheets are due today \u23f0"}
+{"user": "rocknrolla", "timestamp": "2025-02-16 13:59", "text": "Zoom is laggy again\u2014switching to Meet."}
+{"user": "nina", "timestamp": "2025-02-16 14:07", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"user": "rocknrolla", "timestamp": "2025-02-16 14:12", "text": "Updated the docs with the latest changes \ud83d\udcc4"}
+{"user": "katniss", "timestamp": "2025-02-16 14:16", "text": "Had a blast at yesterday\u2019s demo session \ud83c\udf89"}
+{"user": "nina", "timestamp": "2025-02-16 14:20", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"user": "neo", "timestamp": "2025-02-16 14:30", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"user": "sarah", "timestamp": "2025-02-16 14:32", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "leia", "timestamp": "2025-02-16 14:34", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 14:37", "text": "trinity is back online."}
+{"user": "sarah", "timestamp": "2025-02-16 14:39", "text": "We should do a virtual coffee hangout soon \u2615"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 14:43", "text": "frodo reconnected."}
+{"user": "sarah", "timestamp": "2025-02-16 14:47", "text": "Feel free to drop playlist recs in #music!"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 14:58", "text": "djmax changed their status to away."}
+{"user": "leia", "timestamp": "2025-02-16 15:09", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"user": "tyler", "timestamp": "2025-02-16 15:20", "text": "Love how clean the new nav looks!"}
+{"user": "emily", "timestamp": "2025-02-16 15:25", "text": "Reminder: All timesheets are due today \u23f0"}
+{"user": "vito", "timestamp": "2025-02-16 15:29", "text": "Anyone else having issues with staging?"}
+{"user": "leia", "timestamp": "2025-02-16 15:40", "text": "Dark mode toggle is live \ud83d\udd25"}
+{"user": "katniss", "timestamp": "2025-02-16 15:50", "text": "Updated the docs with the latest changes \ud83d\udcc4"}
+{"user": "joker", "timestamp": "2025-02-16 16:02", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "trinity", "timestamp": "2025-02-16 16:10", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 16:15", "text": "leia reconnected."}
+{"user": "frodo", "timestamp": "2025-02-16 16:26", "text": "Had a blast at yesterday\u2019s demo session \ud83c\udf89"}
+{"user": "neo", "timestamp": "2025-02-16 16:28", "text": "Reminder: All timesheets are due today \u23f0"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 16:34", "text": "neo reconnected."}
+{"user": "tyler", "timestamp": "2025-02-16 16:43", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "trinity", "timestamp": "2025-02-16 16:49", "text": "We should do a virtual coffee hangout soon \u2615"}
+{"user": "nina", "timestamp": "2025-02-16 17:01", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "katniss", "timestamp": "2025-02-16 17:04", "text": "Testing Stripe integration now\u2014will confirm in 15."}
+{"user": "grace", "timestamp": "2025-02-16 17:07", "text": "Huddle up for a quick sync?"}
+{"user": "grace", "timestamp": "2025-02-16 17:09", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "neo", "timestamp": "2025-02-16 17:12", "text": "Had a blast at yesterday\u2019s demo session \ud83c\udf89"}
+{"user": "rocknrolla", "timestamp": "2025-02-16 17:22", "text": "Zoom is laggy again\u2014switching to Meet."}
+{"user": "emily", "timestamp": "2025-02-16 17:31", "text": "Can someone review my PR before EOD?"}
+{"user": "nina", "timestamp": "2025-02-16 17:41", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"user": "joker", "timestamp": "2025-02-16 17:46", "text": "Started using Notion again. Missed this!"}
+{"user": "joker", "timestamp": "2025-02-16 17:49", "text": "Feel free to drop playlist recs in #music!"}
+{"user": "alex", "timestamp": "2025-02-16 17:53", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "alex", "timestamp": "2025-02-16 17:58", "text": "Zoom is laggy again\u2014switching to Meet."}
+{"user": "emily", "timestamp": "2025-02-16 18:06", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "leia", "timestamp": "2025-02-16 18:08", "text": "Lunch break! \ud83e\udd57 Back in 30."}
+{"user": "alex", "timestamp": "2025-02-16 18:19", "text": "Love how clean the new nav looks!"}
+{"user": "joker", "timestamp": "2025-02-16 18:22", "text": "Props to @grace for handling that client call like a pro! \ud83d\udc4f"}
+{"user": "tyler", "timestamp": "2025-02-16 18:29", "text": "Feel free to drop playlist recs in #music!"}
+{"user": "alex", "timestamp": "2025-02-16 18:35", "text": "Updated the docs with the latest changes \ud83d\udcc4"}
+{"user": "djmax", "timestamp": "2025-02-16 18:39", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "rocknrolla", "timestamp": "2025-02-16 18:50", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "nina", "timestamp": "2025-02-16 18:59", "text": "Deploy happening in 5... 4... 3..."}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 19:10", "text": "nina left the workspace."}
+{"user": "nina", "timestamp": "2025-02-16 19:18", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "trinity", "timestamp": "2025-02-16 19:23", "text": "Lunch break! \ud83e\udd57 Back in 30."}
+{"user": "leia", "timestamp": "2025-02-16 19:29", "text": "Anyone else having issues with staging?"}
+{"user": "sarah", "timestamp": "2025-02-16 19:36", "text": "Lunch break! \ud83e\udd57 Back in 30."}
+{"user": "sarah", "timestamp": "2025-02-16 19:42", "text": "We should do a virtual coffee hangout soon \u2615"}
+{"user": "katniss", "timestamp": "2025-02-16 19:50", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"user": "leia", "timestamp": "2025-02-16 19:53", "text": "Huddle up for a quick sync?"}
+{"user": "sarah", "timestamp": "2025-02-16 20:04", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"user": "frodo", "timestamp": "2025-02-16 20:11", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 20:16", "text": "djmax left the workspace."}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 20:28", "text": "joker changed their status to away."}
+{"user": "alex", "timestamp": "2025-02-16 20:32", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 20:40", "text": "trinity changed their status to away."}
+{"user": "leia", "timestamp": "2025-02-16 20:50", "text": "Testing Stripe integration now\u2014will confirm in 15."}
+{"user": "nina", "timestamp": "2025-02-16 20:53", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "alex", "timestamp": "2025-02-16 21:02", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"user": "neo", "timestamp": "2025-02-16 21:10", "text": "Testing Stripe integration now\u2014will confirm in 15."}
+{"user": "grace", "timestamp": "2025-02-16 21:12", "text": "Can someone review my PR before EOD?"}
+{"user": "nina", "timestamp": "2025-02-16 21:16", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "neo", "timestamp": "2025-02-16 21:25", "text": "Props to @grace for handling that client call like a pro! \ud83d\udc4f"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 21:31", "text": "grace left the workspace."}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 21:40", "text": "tyler joined the workspace."}
+{"user": "leia", "timestamp": "2025-02-16 21:52", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 21:57", "text": "grace is back online."}
+{"user": "vito", "timestamp": "2025-02-16 22:04", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 22:15", "text": "sarah joined the workspace."}
+{"type": "system", "user": "system", "timestamp": "2025-02-16 22:21", "text": "nina joined the workspace."}
+{"user": "vito", "timestamp": "2025-02-16 22:29", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"user": "neo", "timestamp": "2025-02-16 22:37", "text": "Dark mode toggle is live \ud83d\udd25"}
+{"user": "alex", "timestamp": "2025-02-16 22:44", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"user": "vito", "timestamp": "2025-02-16 22:47", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "frodo", "timestamp": "2025-02-16 22:55", "text": "Props to @grace for handling that client call like a pro! \ud83d\udc4f"}
+{"user": "alex", "timestamp": "2025-02-16 23:06", "text": "Huddle up for a quick sync?"}
+{"user": "alex", "timestamp": "2025-02-16 23:14", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "grace", "timestamp": "2025-02-16 23:20", "text": "Had a blast at yesterday\u2019s demo session \ud83c\udf89"}
+{"user": "neo", "timestamp": "2025-02-16 23:29", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"user": "nina", "timestamp": "2025-02-16 23:36", "text": "Lunch break! \ud83e\udd57 Back in 30."}
+{"user": "alex", "timestamp": "2025-02-16 23:48", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "rocknrolla", "timestamp": "2025-02-17 00:00", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"user": "joker", "timestamp": "2025-02-17 00:12", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "emily", "timestamp": "2025-02-17 00:24", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"user": "rocknrolla", "timestamp": "2025-02-17 00:32", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"user": "emily", "timestamp": "2025-02-17 00:43", "text": "I\u2019m OOO tomorrow but reachable by email."}
+{"user": "djmax", "timestamp": "2025-02-17 00:48", "text": "Dark mode toggle is live \ud83d\udd25"}
+{"user": "djmax", "timestamp": "2025-02-17 00:57", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "emily", "timestamp": "2025-02-17 01:01", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "grace", "timestamp": "2025-02-17 01:06", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "katniss", "timestamp": "2025-02-17 01:16", "text": "I\u2019m OOO tomorrow but reachable by email."}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 01:19", "text": "neo joined the workspace."}
+{"user": "neo", "timestamp": "2025-02-17 01:30", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "nina", "timestamp": "2025-02-17 01:32", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 01:37", "text": "nina joined the workspace."}
+{"user": "frodo", "timestamp": "2025-02-17 01:44", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "joker", "timestamp": "2025-02-17 01:51", "text": "I\u2019m OOO tomorrow but reachable by email."}
+{"user": "djmax", "timestamp": "2025-02-17 02:01", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "trinity", "timestamp": "2025-02-17 02:10", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "tyler", "timestamp": "2025-02-17 02:14", "text": "Props to @grace for handling that client call like a pro! \ud83d\udc4f"}
+{"user": "emily", "timestamp": "2025-02-17 02:24", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"user": "djmax", "timestamp": "2025-02-17 02:29", "text": "Updated the docs with the latest changes \ud83d\udcc4"}
+{"user": "nina", "timestamp": "2025-02-17 02:38", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "katniss", "timestamp": "2025-02-17 02:43", "text": "Had a blast at yesterday\u2019s demo session \ud83c\udf89"}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 02:52", "text": "rocknrolla is back online."}
+{"user": "djmax", "timestamp": "2025-02-17 03:03", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "vito", "timestamp": "2025-02-17 03:11", "text": "Can someone review my PR before EOD?"}
+{"user": "frodo", "timestamp": "2025-02-17 03:19", "text": "Lunch break! \ud83e\udd57 Back in 30."}
+{"user": "leia", "timestamp": "2025-02-17 03:31", "text": "Dark mode toggle is live \ud83d\udd25"}
+{"user": "neo", "timestamp": "2025-02-17 03:37", "text": "Reminder: All timesheets are due today \u23f0"}
+{"user": "djmax", "timestamp": "2025-02-17 03:47", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "djmax", "timestamp": "2025-02-17 03:55", "text": "Testing Stripe integration now\u2014will confirm in 15."}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 04:06", "text": "leia left the workspace."}
+{"user": "neo", "timestamp": "2025-02-17 04:08", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "sarah", "timestamp": "2025-02-17 04:18", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"user": "djmax", "timestamp": "2025-02-17 04:24", "text": "Can someone review my PR before EOD?"}
+{"user": "katniss", "timestamp": "2025-02-17 04:33", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"user": "leia", "timestamp": "2025-02-17 04:35", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "alex", "timestamp": "2025-02-17 04:41", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "alex", "timestamp": "2025-02-17 04:53", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "emily", "timestamp": "2025-02-17 05:04", "text": "Anyone else having issues with staging?"}
+{"user": "emily", "timestamp": "2025-02-17 05:15", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "joker", "timestamp": "2025-02-17 05:27", "text": "Feel free to drop playlist recs in #music!"}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 05:38", "text": "tyler changed their status to away."}
+{"user": "emily", "timestamp": "2025-02-17 05:44", "text": "Props to @grace for handling that client call like a pro! \ud83d\udc4f"}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 05:55", "text": "joker signed off."}
+{"user": "rocknrolla", "timestamp": "2025-02-17 06:00", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "sarah", "timestamp": "2025-02-17 06:12", "text": "I\u2019m OOO tomorrow but reachable by email."}
+{"user": "leia", "timestamp": "2025-02-17 06:22", "text": "Can someone review my PR before EOD?"}
+{"user": "grace", "timestamp": "2025-02-17 06:33", "text": "Updated the docs with the latest changes \ud83d\udcc4"}
+{"user": "tyler", "timestamp": "2025-02-17 06:35", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "grace", "timestamp": "2025-02-17 06:46", "text": "Love how clean the new nav looks!"}
+{"user": "djmax", "timestamp": "2025-02-17 06:58", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "leia", "timestamp": "2025-02-17 07:00", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"user": "katniss", "timestamp": "2025-02-17 07:08", "text": "Started using Notion again. Missed this!"}
+{"user": "nina", "timestamp": "2025-02-17 07:17", "text": "Testing Stripe integration now\u2014will confirm in 15."}
+{"user": "grace", "timestamp": "2025-02-17 07:28", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"user": "katniss", "timestamp": "2025-02-17 07:37", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 07:44", "text": "katniss left the workspace."}
+{"user": "trinity", "timestamp": "2025-02-17 07:56", "text": "Zoom is laggy again\u2014switching to Meet."}
+{"user": "alex", "timestamp": "2025-02-17 08:01", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 08:08", "text": "grace reconnected."}
+{"user": "tyler", "timestamp": "2025-02-17 08:17", "text": "We should do a virtual coffee hangout soon \u2615"}
+{"user": "trinity", "timestamp": "2025-02-17 08:27", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"user": "katniss", "timestamp": "2025-02-17 08:35", "text": "Feel free to drop playlist recs in #music!"}
+{"user": "emily", "timestamp": "2025-02-17 08:39", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "tyler", "timestamp": "2025-02-17 08:48", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "nina", "timestamp": "2025-02-17 08:59", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"user": "frodo", "timestamp": "2025-02-17 09:01", "text": "Reminder: All timesheets are due today \u23f0"}
+{"user": "trinity", "timestamp": "2025-02-17 09:10", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"user": "djmax", "timestamp": "2025-02-17 09:19", "text": "Feel free to drop playlist recs in #music!"}
+{"user": "sarah", "timestamp": "2025-02-17 09:25", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"user": "neo", "timestamp": "2025-02-17 09:31", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "grace", "timestamp": "2025-02-17 09:42", "text": "Huddle up for a quick sync?"}
+{"user": "leia", "timestamp": "2025-02-17 09:53", "text": "Props to @grace for handling that client call like a pro! \ud83d\udc4f"}
+{"user": "rocknrolla", "timestamp": "2025-02-17 09:59", "text": "Lunch break! \ud83e\udd57 Back in 30."}
+{"user": "nina", "timestamp": "2025-02-17 10:01", "text": "I\u2019m OOO tomorrow but reachable by email."}
+{"user": "nina", "timestamp": "2025-02-17 10:07", "text": "Lunch break! \ud83e\udd57 Back in 30."}
+{"user": "leia", "timestamp": "2025-02-17 10:17", "text": "Huddle up for a quick sync?"}
+{"user": "rocknrolla", "timestamp": "2025-02-17 10:20", "text": "Lunch break! \ud83e\udd57 Back in 30."}
+{"user": "trinity", "timestamp": "2025-02-17 10:23", "text": "Love how clean the new nav looks!"}
+{"user": "vito", "timestamp": "2025-02-17 10:31", "text": "Zoom is laggy again\u2014switching to Meet."}
+{"user": "frodo", "timestamp": "2025-02-17 10:35", "text": "Props to @grace for handling that client call like a pro! \ud83d\udc4f"}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 10:37", "text": "emily changed their status to away."}
+{"user": "sarah", "timestamp": "2025-02-17 10:41", "text": "Dark mode toggle is live \ud83d\udd25"}
+{"user": "grace", "timestamp": "2025-02-17 10:51", "text": "Updated the docs with the latest changes \ud83d\udcc4"}
+{"user": "rocknrolla", "timestamp": "2025-02-17 10:53", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "alex", "timestamp": "2025-02-17 11:04", "text": "Can someone review my PR before EOD?"}
+{"user": "grace", "timestamp": "2025-02-17 11:10", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "frodo", "timestamp": "2025-02-17 11:22", "text": "Anyone else having issues with staging?"}
+{"user": "nina", "timestamp": "2025-02-17 11:24", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "grace", "timestamp": "2025-02-17 11:26", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "joker", "timestamp": "2025-02-17 11:32", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "rocknrolla", "timestamp": "2025-02-17 11:38", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "joker", "timestamp": "2025-02-17 11:48", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "sarah", "timestamp": "2025-02-17 11:55", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "trinity", "timestamp": "2025-02-17 12:07", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"user": "grace", "timestamp": "2025-02-17 12:17", "text": "Can someone review my PR before EOD?"}
+{"user": "alex", "timestamp": "2025-02-17 12:19", "text": "Anyone else having issues with staging?"}
+{"user": "grace", "timestamp": "2025-02-17 12:31", "text": "Zoom is laggy again\u2014switching to Meet."}
+{"user": "grace", "timestamp": "2025-02-17 12:38", "text": "Can someone review my PR before EOD?"}
+{"user": "emily", "timestamp": "2025-02-17 12:45", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "vito", "timestamp": "2025-02-17 12:49", "text": "Lunch break! \ud83e\udd57 Back in 30."}
+{"user": "nina", "timestamp": "2025-02-17 12:58", "text": "Started using Notion again. Missed this!"}
+{"user": "grace", "timestamp": "2025-02-17 13:02", "text": "Had a blast at yesterday\u2019s demo session \ud83c\udf89"}
+{"user": "emily", "timestamp": "2025-02-17 13:04", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "frodo", "timestamp": "2025-02-17 13:09", "text": "Bug triage later today\u2014don\u2019t forget!"}
+{"user": "tyler", "timestamp": "2025-02-17 13:15", "text": "Anyone else having issues with staging?"}
+{"user": "frodo", "timestamp": "2025-02-17 13:25", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "leia", "timestamp": "2025-02-17 13:27", "text": "Updated the docs with the latest changes \ud83d\udcc4"}
+{"user": "sarah", "timestamp": "2025-02-17 13:37", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"user": "emily", "timestamp": "2025-02-17 13:40", "text": "I\u2019m OOO tomorrow but reachable by email."}
+{"user": "alex", "timestamp": "2025-02-17 13:47", "text": "I\u2019m OOO tomorrow but reachable by email."}
+{"user": "leia", "timestamp": "2025-02-17 13:54", "text": "Reminder: All timesheets are due today \u23f0"}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 13:57", "text": "rocknrolla signed off."}
+{"user": "tyler", "timestamp": "2025-02-17 14:09", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "leia", "timestamp": "2025-02-17 14:15", "text": "We should do a virtual coffee hangout soon \u2615"}
+{"user": "grace", "timestamp": "2025-02-17 14:21", "text": "Props to @grace for handling that client call like a pro! \ud83d\udc4f"}
+{"user": "tyler", "timestamp": "2025-02-17 14:33", "text": "Anyone else having issues with staging?"}
+{"user": "vito", "timestamp": "2025-02-17 14:36", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "trinity", "timestamp": "2025-02-17 14:45", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "emily", "timestamp": "2025-02-17 14:53", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "djmax", "timestamp": "2025-02-17 14:57", "text": "Lunch break! \ud83e\udd57 Back in 30."}
+{"user": "trinity", "timestamp": "2025-02-17 15:02", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "neo", "timestamp": "2025-02-17 15:13", "text": "Lunch break! \ud83e\udd57 Back in 30."}
+{"user": "grace", "timestamp": "2025-02-17 15:15", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"user": "nina", "timestamp": "2025-02-17 15:23", "text": "Props to @grace for handling that client call like a pro! \ud83d\udc4f"}
+{"user": "trinity", "timestamp": "2025-02-17 15:31", "text": "Reminder: All timesheets are due today \u23f0"}
+{"user": "tyler", "timestamp": "2025-02-17 15:41", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "frodo", "timestamp": "2025-02-17 15:50", "text": "Love how clean the new nav looks!"}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 15:53", "text": "joker joined the workspace."}
+{"user": "neo", "timestamp": "2025-02-17 16:03", "text": "Reminder: All timesheets are due today \u23f0"}
+{"user": "vito", "timestamp": "2025-02-17 16:10", "text": "Lunch break! \ud83e\udd57 Back in 30."}
+{"user": "alex", "timestamp": "2025-02-17 16:17", "text": "Props to @grace for handling that client call like a pro! \ud83d\udc4f"}
+{"user": "sarah", "timestamp": "2025-02-17 16:27", "text": "Love how clean the new nav looks!"}
+{"user": "joker", "timestamp": "2025-02-17 16:34", "text": "Updated the docs with the latest changes \ud83d\udcc4"}
+{"user": "vito", "timestamp": "2025-02-17 16:42", "text": "Anyone else having issues with staging?"}
+{"user": "alex", "timestamp": "2025-02-17 16:53", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"user": "nina", "timestamp": "2025-02-17 17:01", "text": "I\u2019m OOO tomorrow but reachable by email."}
+{"user": "leia", "timestamp": "2025-02-17 17:12", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "alex", "timestamp": "2025-02-17 17:23", "text": "Can someone review my PR before EOD?"}
+{"user": "katniss", "timestamp": "2025-02-17 17:30", "text": "Reminder: All timesheets are due today \u23f0"}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 17:35", "text": "frodo is back online."}
+{"user": "grace", "timestamp": "2025-02-17 17:47", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"user": "tyler", "timestamp": "2025-02-17 17:58", "text": "Anyone else having issues with staging?"}
+{"user": "joker", "timestamp": "2025-02-17 18:06", "text": "Updated the docs with the latest changes \ud83d\udcc4"}
+{"user": "neo", "timestamp": "2025-02-17 18:14", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "nina", "timestamp": "2025-02-17 18:20", "text": "Dark mode toggle is live \ud83d\udd25"}
+{"user": "trinity", "timestamp": "2025-02-17 18:27", "text": "Huddle up for a quick sync?"}
+{"user": "neo", "timestamp": "2025-02-17 18:30", "text": "Reminder: All timesheets are due today \u23f0"}
+{"user": "tyler", "timestamp": "2025-02-17 18:35", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "katniss", "timestamp": "2025-02-17 18:38", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+{"user": "alex", "timestamp": "2025-02-17 18:46", "text": "We should do a virtual coffee hangout soon \u2615"}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 18:53", "text": "rocknrolla changed their status to away."}
+{"user": "joker", "timestamp": "2025-02-17 19:01", "text": "Started using Notion again. Missed this!"}
+{"user": "frodo", "timestamp": "2025-02-17 19:05", "text": "Huddle up for a quick sync?"}
+{"user": "trinity", "timestamp": "2025-02-17 19:12", "text": "Lunch break! \ud83e\udd57 Back in 30."}
+{"user": "frodo", "timestamp": "2025-02-17 19:24", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 19:30", "text": "katniss joined the workspace."}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 19:39", "text": "frodo joined the workspace."}
+{"user": "joker", "timestamp": "2025-02-17 19:41", "text": "Can someone review my PR before EOD?"}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 19:44", "text": "tyler joined the workspace."}
+{"user": "leia", "timestamp": "2025-02-17 19:48", "text": "I\u2019m OOO tomorrow but reachable by email."}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 19:54", "text": "sarah signed off."}
+{"user": "tyler", "timestamp": "2025-02-17 20:06", "text": "Feel free to drop playlist recs in #music!"}
+{"user": "vito", "timestamp": "2025-02-17 20:13", "text": "Reminder: All timesheets are due today \u23f0"}
+{"user": "rocknrolla", "timestamp": "2025-02-17 20:16", "text": "Reminder: All timesheets are due today \u23f0"}
+{"user": "frodo", "timestamp": "2025-02-17 20:24", "text": "Just pushed the fix for the dashboard bug. Please test."}
+{"user": "tyler", "timestamp": "2025-02-17 20:30", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "nina", "timestamp": "2025-02-17 20:37", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "emily", "timestamp": "2025-02-17 20:45", "text": "Love how clean the new nav looks!"}
+{"user": "tyler", "timestamp": "2025-02-17 20:54", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 20:57", "text": "alex left the workspace."}
+{"user": "tyler", "timestamp": "2025-02-17 21:09", "text": "Can someone review my PR before EOD?"}
+{"user": "grace", "timestamp": "2025-02-17 21:15", "text": "Updated the docs with the latest changes \ud83d\udcc4"}
+{"user": "nina", "timestamp": "2025-02-17 21:24", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "leia", "timestamp": "2025-02-17 21:31", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "joker", "timestamp": "2025-02-17 21:34", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"user": "joker", "timestamp": "2025-02-17 21:37", "text": "Feel free to drop playlist recs in #music!"}
+{"user": "frodo", "timestamp": "2025-02-17 21:47", "text": "Anyone else having issues with staging?"}
+{"user": "emily", "timestamp": "2025-02-17 21:49", "text": "Dark mode toggle is live \ud83d\udd25"}
+{"user": "katniss", "timestamp": "2025-02-17 21:53", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"user": "trinity", "timestamp": "2025-02-17 22:05", "text": "Can someone review my PR before EOD?"}
+{"user": "alex", "timestamp": "2025-02-17 22:08", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "trinity", "timestamp": "2025-02-17 22:19", "text": "Feel free to drop playlist recs in #music!"}
+{"user": "sarah", "timestamp": "2025-02-17 22:28", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "nina", "timestamp": "2025-02-17 22:39", "text": "Reminder: All timesheets are due today \u23f0"}
+{"user": "alex", "timestamp": "2025-02-17 22:42", "text": "Anyone else having issues with staging?"}
+{"user": "alex", "timestamp": "2025-02-17 22:48", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"user": "trinity", "timestamp": "2025-02-17 22:59", "text": "Props to @grace for handling that client call like a pro! \ud83d\udc4f"}
+{"user": "sarah", "timestamp": "2025-02-17 23:02", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"user": "katniss", "timestamp": "2025-02-17 23:11", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 23:17", "text": "trinity changed their status to away."}
+{"user": "neo", "timestamp": "2025-02-17 23:22", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "djmax", "timestamp": "2025-02-17 23:25", "text": "Reminder: All timesheets are due today \u23f0"}
+{"user": "joker", "timestamp": "2025-02-17 23:32", "text": "Morning everyone! \u2600\ufe0f Standup in 10 mins."}
+{"type": "system", "user": "system", "timestamp": "2025-02-17 23:34", "text": "neo reconnected."}
+{"user": "djmax", "timestamp": "2025-02-17 23:44", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "frodo", "timestamp": "2025-02-17 23:47", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "alex", "timestamp": "2025-02-17 23:58", "text": "Huddle up for a quick sync?"}
+{"user": "alex", "timestamp": "2025-02-18 00:07", "text": "Code freeze starts Thursday \ud83d\udeab"}
+{"user": "emily", "timestamp": "2025-02-18 00:12", "text": "I\u2019m OOO tomorrow but reachable by email."}
+{"user": "frodo", "timestamp": "2025-02-18 00:15", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"user": "tyler", "timestamp": "2025-02-18 00:19", "text": "Let\u2019s finalize Q2 goals by Friday."}
+{"user": "vito", "timestamp": "2025-02-18 00:28", "text": "FYI: Slack is being weird on mobile today \ud83e\udd37"}
+{"user": "tyler", "timestamp": "2025-02-18 00:31", "text": "Had a blast at yesterday\u2019s demo session \ud83c\udf89"}
+{"user": "katniss", "timestamp": "2025-02-18 00:40", "text": "Design team shared the new mockups\u2014love the colors!"}
+{"user": "neo", "timestamp": "2025-02-18 00:43", "text": "Meeting link is pinned in #calendar \ud83d\udcc5"}
+{"type": "system", "user": "system", "timestamp": "2025-02-18 00:49", "text": "katniss left the workspace."}
+{"user": "alex", "timestamp": "2025-02-18 00:56", "text": "Had a blast at yesterday\u2019s demo session \ud83c\udf89"}
+{"user": "djmax", "timestamp": "2025-02-18 01:01", "text": "Lunch break! \ud83e\udd57 Back in 30."}
+{"user": "sarah", "timestamp": "2025-02-18 01:13", "text": "Friday fun idea: pet photo contest? \ud83d\udc36\ud83d\udc31"}
+{"user": "vito", "timestamp": "2025-02-18 01:23", "text": "I\u2019m OOO tomorrow but reachable by email."}
+{"user": "neo", "timestamp": "2025-02-18 01:26", "text": "Props to @grace for handling that client call like a pro! \ud83d\udc4f"}
+{"user": "rocknrolla", "timestamp": "2025-02-18 01:33", "text": "Dark mode toggle is live \ud83d\udd25"}
+{"user": "frodo", "timestamp": "2025-02-18 01:40", "text": "Deploy happening in 5... 4... 3..."}
+{"user": "neo", "timestamp": "2025-02-18 01:49", "text": "Testing Stripe integration now\u2014will confirm in 15."}
+{"user": "vito", "timestamp": "2025-02-18 01:54", "text": "Let\u2019s keep using threads to keep convo tidy \ud83e\uddf5"}
+

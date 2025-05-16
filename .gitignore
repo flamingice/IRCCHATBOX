@@ -1,0 +1,13 @@
+# Node.js dependencies
+node_modules
+client/node_modules
+client/.vscode
+server/node_modules
+npm-debug.log
+yarn-error.log
+
+.idea
+
+# .env files
+server/.env
+client/.env

@@ -1,0 +1,21 @@
+{
+  "name": "IRCCHATBOX",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run start --prefix server\" \"npm run dev --prefix client\"",
+    "install": "npm install --prefix server && npm install --prefix client",
+    "client": "npm run dev --prefix client",
+    "server": "npm run start --prefix server",
+    "build": "npm run build --prefix client",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.0.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "prettier": "^3.5.3"
+  }
+}
