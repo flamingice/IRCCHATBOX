@@ -1,7 +1,8 @@
 <template>
   <nav class="flex items-center justify-between px-4 py-4 border-b bg-white">
     <div class="flex items-center gap-2">
-      <img src="/ircchatboxlogo.png" class="h-6 w-auto" alt="logo" />
+      <!-- Increase logo size -->
+      <img src="/ircchatboxlogo.png" class="h-12 w-auto" alt="logo" />
     </div>
     <div class="flex gap-6 text-sm text-gray-600">
       <template v-for="link in navLinks" :key="link.to">
