@@ -121,7 +121,7 @@ const hideDMPopover = () => {
 
 const createDM = async () => {
   const name = newDMUser.value.trim();
-  errorMessage.value = ''; // Reset error
+  errorMessage.value = ''; // Reset error message
 
   if (!name) {
     errorMessage.value = 'Username is required.';
