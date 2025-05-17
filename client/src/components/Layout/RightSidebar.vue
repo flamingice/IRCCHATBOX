@@ -1,29 +1,22 @@
 <template>
-  <div class=" border-l p-4 bg-white overflow-y-auto text-sm">
+  <div class="border-l p-4 bg-white overflow-y-auto text-sm">
     <h3 class="text-sm font-semibold mb-4 text-gray-800">
-      {{ totalUsers }} users online
+      <span v-if="isDM">Direct Chat</span>
+      <span v-else>{{ users.length }} participants</span>
     </h3>
 
-    <div v-if="operators.length" class="text-xs text-gray-500 mb-1">Operators</div>
-    <ul v-if="operators.length" class="mb-4 space-y-1">
-      <li
-          v-for="op in operators"
-          :key="op"
-          class="flex items-center gap-2 text-blue-600"
-      >
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-        @{{ op }}
-      </li>
-    </ul>
-
-    <div class="text-xs text-gray-500 mb-1">Users</div>
     <ul class="space-y-1">
       <li
           v-for="user in users"
           :key="user"
           class="flex items-center gap-2 text-gray-800"
       >
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+        <span
+            :class="[
+            'w-2 h-2 rounded-full',
+            onlineUsers.has(user) ? 'bg-green-500' : 'bg-gray-300'
+          ]"
+        ></span>
         {{ user }}
       </li>
     </ul>
@@ -31,17 +24,17 @@
 </template>
 
 <script setup>
-const operators = ['alex', 'grace', 'trinity'];
+import { computed } from 'vue';
 
-const users = [
-  'rocknrolla',
-  'nina',
-  'djmax',
-  'vito',
-  'emily',
-  'neo',
-  'sarah'
-];
+const props = defineProps({
+  users: {
+    type: Array,
+    required: true
+  }
+});
 
-const totalUsers = operators.length + users.length;
+const onlineUsers = new Set(['emily', 'djmax', 'grace', 'tyler', 'you']);
+
+// Determine if this is a direct chat (2 users only)
+const isDM = computed(() => props.users.length === 2);
 </script>

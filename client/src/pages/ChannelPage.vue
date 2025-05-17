@@ -7,21 +7,21 @@
       <!-- Main Chat Area -->
       <div class="flex flex-col flex-1 overflow-hidden">
         <!-- ChatView centered and scrollable -->
-        <div ref="chatContainer" class="flex justify-center flex-1 overflow-y-auto bg-gray-100">
+        <div ref="chatContainer" class="flex flex-1 overflow-y-auto">
           <div class="w-full max-w-3xl px-4">
             <ChatView :messages="messages" />
           </div>
         </div>
 
         <!--  Centered InputBar -->
-        <div class="flex justify-center bg-white py-2 px-4 border-t">
+        <div class="flex bg-white py-2 px-4 border-t">
           <div class="w-full max-w-3xl">
             <InputBar @send="handleNewMessage" />
           </div>
         </div>
       </div>
 
-      <RightSidebar />
+      <RightSidebar :users="uniqueUsers" />
     </div>
   </div>
 </template>
@@ -69,6 +69,14 @@ function scrollToBottom() {
   if (!el) return;
   el.scrollTop = el.scrollHeight;
 }
+
+const uniqueUsers = computed(() => {
+  const seen = new Set();
+  return messages.value
+      .map(msg => msg.user)
+      .filter(user => user && user !== 'system' && !seen.has(user) && seen.add(user));
+});
+
 
 watch(channelName, async () => {
   await fetchMessages();
