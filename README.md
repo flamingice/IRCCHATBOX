@@ -85,7 +85,8 @@ Then serve `client/dist/` statically or proxy it via Express.
 ---
 
 ## 🧪 Sample Data
-You can generate realistic logs using the built-in Python script or manually create `.log` files.
+To experiment with the interface, you can create your own `.log` files in the
+`logs` folders. Each line should contain a JSON object representing a message.
 Example:
 ```json
 {"user":"bob","timestamp":"2025-05-14 12:05","text":"Hey there!"}
