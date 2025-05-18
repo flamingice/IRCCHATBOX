@@ -1,7 +1,7 @@
 <template>
   <div class="h-full border-r bg-gray-100 p-4 flex flex-col relative">
-    <ChannelList v-if="isChannelView" />
-    <DMList v-else-if="isDMView" />
+    <ChannelList/>
+    <DMList/>
   </div>
 </template>
 

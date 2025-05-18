@@ -19,7 +19,7 @@
             v-else
             :to="link.to"
             :class="[
-            isActive(link.url)
+            isActive(link.label)
               ? 'font-bold text-black underline'
               : 'hover:underline'
           ]"
@@ -37,13 +37,14 @@ import { useRoute, RouterLink } from 'vue-router'
 const route = useRoute()
 
 const navLinks = [
-  { label: 'Chat Rooms', to: '/channel/general', url: '/channel/' },
-  { label: 'Direct Messages', to: '/dm/djmax', url: '/dm/' },
+  { label: 'Home', to: '/channel/general', url: '/channel/' },
+  // { label: 'Chat Rooms', to: '/channel/general', url: '/channel/' },
+  // { label: 'Direct Messages', to: '/dm/djmax', url: '/dm/' },
   { label: 'Help', to: '/help', disabled: true },
   { label: 'About', to: '/about', disabled: true },
   { label: 'Login', to: '/login', disabled: true }
 ]
 
-const isActive = (path) => route.path.includes(path)
+const isActive = (label) => label === 'Home' // TODO - as a temporary solution
 
 </script>
