@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { parseLogFile, formatMessageLine } from '../utils/logParser.js';
+import { sanitizeInput, isValidTimestamp, strictSanitize } from '../utils/validators.js'
 
 const LOG_DIR = path.resolve('src/logs/channels');
 const DM_DIR = path.resolve('src/logs/dms');
@@ -85,21 +86,43 @@ export const getChannelMessages = (req, res) => {
  */
 export const postChannelMessage = (req, res) => {
     const { channel } = req.params;
-    const { user, text, timestamp } = req.body;
+    let { user, text, timestamp } = req.body;
 
+    // Validate required fields
     if (!user || !text || !timestamp) {
-        return res.status(400).json({ error: 'Missing user, text, or timestamp.' });
+        return res.status(400).json({ error: 'Invalid message data.' });
     }
 
-    const logFile = path.join(LOG_DIR, `${channel}.log`);
+    // Strict sanitization
+    user = strictSanitize(user);
+    text = strictSanitize(text);
+    const sanitizedChannel = sanitizeInput(channel);
+
+    // Validate timestamp with specific format
+    if (!isValidTimestamp(timestamp)) {
+        return res.status(400).json({ error: 'Invalid timestamp format. Expected "YYYY-MM-DD HH:mm".' });
+    }
+
+    // Prevent path traversal
+    const logFile = path.join(LOG_DIR, `${sanitizedChannel}.log`);
+    if (!logFile.startsWith(path.resolve(LOG_DIR))) {
+        return res.status(400).json({ error: 'Invalid channel.' });
+    }
+
+    // Format the message line safely
     const line = formatMessageLine(user, timestamp, text);
 
     try {
-        fs.appendFileSync(logFile, '\n' + line + '\n', 'utf-8');
+        // Create directory if it doesn't exist
+        if (!fs.existsSync(LOG_DIR)) {
+            fs.mkdirSync(LOG_DIR, { recursive: true });
+        }
 
+        fs.appendFileSync(logFile, line + '\n', 'utf-8');
         return res.status(201).json({ success: true });
     } catch (err) {
-        return res.status(500).json({ error: 'Failed to write to log file.' });
+        console.error('Log write error:', err);
+        return res.status(500).json({ error: 'Message processing failed.' });
     }
 };
 
