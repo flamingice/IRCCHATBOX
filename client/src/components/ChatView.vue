@@ -1,13 +1,11 @@
 <template>
   <div class="space-y-4 bg-white text-sm w-full">
-    <h2 class="text-lg font-semibold mb-4 sticky top-0 bg-white z-10 py-2">
-      #{{ channelName }}
-    </h2>
+    <h2 class="text-lg font-semibold mb-4 sticky top-0 bg-white z-10 py-2">#{{ channelName }}</h2>
 
     <div
-        v-for="(msg, index) in messages"
-        :key="index"
-        class="flex flex-col gap-1 px-2 hover:bg-gray-50 rounded transition"
+      v-for="(msg, index) in messages"
+      :key="index"
+      class="flex flex-col gap-1 px-2 hover:bg-gray-50 rounded transition"
     >
       <!-- System message styling -->
       <div v-if="msg.user === 'system'" class="text-center text-xs text-gray-500 italic">
@@ -35,9 +33,7 @@ import { format } from 'date-fns';
 
 const props = defineProps(['messages']);
 const route = useRoute();
-
 const channelName = computed(() => route.params.name);
-
 const formatTime = (timestamp) => {
   try {
     const parsed = new Date(timestamp);
@@ -46,5 +42,4 @@ const formatTime = (timestamp) => {
     return timestamp;
   }
 };
-
 </script>

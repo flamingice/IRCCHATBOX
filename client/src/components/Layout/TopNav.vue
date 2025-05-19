@@ -7,22 +7,18 @@
       <template v-for="link in navLinks" :key="link.to">
         <!-- Dummy links (no routing) -->
         <span
-            v-if="link.disabled"
-            class="hover:underline cursor-pointer text-gray-400"
-            @click.prevent
+          v-if="link.disabled"
+          class="hover:underline cursor-pointer text-gray-400"
+          @click.prevent
         >
           {{ link.label }}
         </span>
 
         <!-- Real links -->
         <RouterLink
-            v-else
-            :to="link.to"
-            :class="[
-            isActive(link.label)
-              ? 'font-bold text-black underline'
-              : 'hover:underline'
-          ]"
+          v-else
+          :to="link.to"
+          :class="[isActive(link.label) ? 'font-bold text-black underline' : 'hover:underline']"
         >
           {{ link.label }}
         </RouterLink>
@@ -32,9 +28,9 @@
 </template>
 
 <script setup>
-import { useRoute, RouterLink } from 'vue-router'
+import { useRoute, RouterLink } from 'vue-router';
 
-const route = useRoute()
+const route = useRoute();
 
 const navLinks = [
   { label: 'Home', to: '/channel/general', url: '/channel/' },
@@ -43,8 +39,7 @@ const navLinks = [
   { label: 'Help', to: '/help', disabled: true },
   { label: 'About', to: '/about', disabled: true },
   { label: 'Login', to: '/login', disabled: true }
-]
+];
 
-const isActive = (label) => label === 'Home' // TODO - as a temporary solution
-
+const isActive = (label) => label === 'Home'; // TODO - as a temporary solution
 </script>

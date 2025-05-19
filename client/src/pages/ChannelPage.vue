@@ -1,15 +1,12 @@
 <template>
   <div class="flex flex-col h-screen overflow-hidden">
-    <TopNav />
     <div class="flex flex-1 overflow-hidden">
-      <Sidebar />
-
       <!-- Main Chat Area -->
       <div class="flex flex-col flex-1 overflow-hidden">
         <!-- ChatView centered and scrollable -->
         <div ref="chatContainer" class="flex flex-1 overflow-y-auto">
           <div class="w-full max-w-3xl px-4">
-            <ChatView :messages="messages" />
+            <Chat :messages="messages" />
           </div>
         </div>
 
@@ -20,23 +17,21 @@
           </div>
         </div>
       </div>
-
-      <RightSidebar :users="uniqueUsers" />
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch, nextTick } from 'vue';
+import { computed, nextTick, onMounted, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
 
 import TopNav from '@/components/Layout/TopNav.vue';
-import Sidebar from '@/components/Sidebar.vue';
 import RightSidebar from '@/components/Layout/RightSidebar.vue';
-import ChatView from '@/components/ChatView.vue';
 import InputBar from '@/components/InputBar.vue';
 
 import api from '@/services/api';
+import Chat from '@/features/Chat/ui/Chat.vue';
+import { getContrastDarkColor, getRandomDarkColor } from '@/shared/libs/utils/color';
 
 const route = useRoute();
 const channelName = computed(() => route.params.name);
@@ -45,8 +40,13 @@ const chatContainer = ref(null);
 
 const fetchMessages = async () => {
   try {
+    const youMessageColor = getRandomDarkColor();
+    const respondentMessageColor = getContrastDarkColor(youMessageColor);
     const response = await api.get(`/channels/${channelName.value}`);
-    messages.value = response.data;
+    messages.value = response.data.map((item, idx) => {
+      item.color = idx % 2 === 0 ? respondentMessageColor : youMessageColor;
+      return item;
+    });
   } catch (err) {
     console.error('Failed to load messages:', err);
     messages.value = [];
@@ -73,10 +73,9 @@ function scrollToBottom() {
 const uniqueUsers = computed(() => {
   const seen = new Set();
   return messages.value
-      .map(msg => msg.user)
-      .filter(user => user && user !== 'system' && !seen.has(user) && seen.add(user));
+    .map((msg) => msg.user)
+    .filter((user) => user && user !== 'system' && !seen.has(user) && seen.add(user));
 });
-
 
 watch(channelName, async () => {
   await fetchMessages();
@@ -89,5 +88,4 @@ onMounted(async () => {
   await nextTick();
   scrollToBottom();
 });
-
 </script>
