@@ -13,16 +13,16 @@ const DM_DIR = path.resolve('src/logs/dms');
  * @returns {Object} - A JSON response indicating success or error.
  */
 export const listDMUsers = (req, res) => {
-    try {
-        const files = fs.readdirSync(DM_DIR);
-        const users = files
-            .filter((file) => file.endsWith('.log'))
-            .map((file) => file.replace('.log', ''));
+  try {
+    const files = fs.readdirSync(DM_DIR);
+    const users = files
+      .filter((file) => file.endsWith('.log'))
+      .map((file) => file.replace('.log', ''));
 
-        res.json(users);
-    } catch (err) {
-        res.status(500).json({ error: 'Failed to read DM directory.' });
-    }
+    res.json(users);
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to read DM directory.' });
+  }
 };
 
 /**
@@ -33,47 +33,46 @@ export const listDMUsers = (req, res) => {
  * @returns {Object} - A JSON response indicating success or error.
  */
 export const createDM = (req, res) => {
-    const { name } = req.body;
+  const { name } = req.body;
 
-    if (!name || name.includes('/') || name.includes('\\')) {
-        return res.status(400).json({ error: 'Invalid DM name.' });
-    }
+  if (!name || name.includes('/') || name.includes('\\')) {
+    return res.status(400).json({ error: 'Invalid DM name.' });
+  }
 
-    const filePath = path.join(DM_DIR, `${name}.log`);
+  const filePath = path.join(DM_DIR, `${name}.log`);
 
-    if (fs.existsSync(filePath)) {
-        return res.status(400).json({ error: 'DM already exists.' });
-    }
+  if (fs.existsSync(filePath)) {
+    return res.status(400).json({ error: 'DM already exists.' });
+  }
 
-    try {
-        fs.writeFileSync(filePath, '', 'utf-8');
-        res.status(201).json({ success: true });
-    } catch {
-        res.status(500).json({ error: 'Failed to create DM.' });
-    }
+  try {
+    fs.writeFileSync(filePath, '', 'utf-8');
+    res.status(201).json({ success: true });
+  } catch {
+    res.status(500).json({ error: 'Failed to create DM.' });
+  }
 };
 
 /**
- * Retrieves all messages from a DM log file for a specific user.
+ * Retrieves all messages.js from a DM log file for a specific user.
  *
  * @param {import('express').Request} req - Express request object with `user` param.
  * @param {import('express').Response} res - Express response object.
  * @returns {Object} - A JSON response indicating success or error.
  */
 export const getDMs = (req, res) => {
-    const { user } = req.params;
-    const filePath = path.join(DM_DIR, `${user}.log`);
+  const { user } = req.params;
+  const filePath = path.join(DM_DIR, `${user}.log`);
 
-    if (!fs.existsSync(filePath))
-        return res.status(404).json([]);
+  if (!fs.existsSync(filePath)) return res.status(404).json([]);
 
-    try {
-        const data = fs.readFileSync(filePath, 'utf-8');
-        const messages = parseLogFile(data);
-        res.json(messages);
-    } catch {
-        res.status(500).json({ error: 'Failed to read DM file.' });
-    }
+  try {
+    const data = fs.readFileSync(filePath, 'utf-8');
+    const messages = parseLogFile(data);
+    res.json(messages);
+  } catch {
+    res.status(500).json({ error: 'Failed to read DM file.' });
+  }
 };
 
 /**
@@ -84,52 +83,53 @@ export const getDMs = (req, res) => {
  * @returns {Object} - A JSON response indicating success or error.
  */
 export const postDM = (req, res) => {
-    try {
-        const { user } = req.params;
-        const { sender, text, timestamp } = req.body;
+  try {
+    const { user } = req.params;
+    const { sender, text, timestamp } = req.body;
 
-        // Validate all required fields exist
-        if (!sender || !text || !timestamp) {
-            return res.status(400).json({ error: 'Missing required fields.' });
-        }
-
-        // Strict validation and sanitization
-        const validation = validateDMMessage({ sender, text, timestamp });
-        if (!validation.isValid || validation.text !== text) {
-            return res.status(400).json({ error: 'Message contains invalid content.' });
-        }
-
-        // Secure path handling
-        const sanitizedUser = user.replace(/[^\w\-]/g, '');
-        const filePath = path.resolve(DM_DIR, `${sanitizedUser}.log`);
-
-        if (!filePath.startsWith(path.resolve(DM_DIR) + path.sep)) {
-            throw new Error('Path traversal attempt');
-        }
-
-        // Verify target file
-        if (!fs.existsSync(filePath)) {
-            return res.status(404).json({ error: 'DM not found.' });
-        }
-
-        const stat = fs.statSync(filePath);
-        if (!stat.isFile()) {
-            throw new Error('Invalid file type');
-        }
-
-        // Secure message formatting
-        const line = formatMessageLine(sender, timestamp, text);
-
-        // Atomic write
-        fs.appendFileSync(filePath, line, {
-            encoding: 'utf-8',
-            flag: 'a'
-        });
-
-        return res.status(201).json({ success: true });
-
-    } catch (err) {
-        console.error('DM post error:', err);
-        return res.status(500).json({ error: 'Failed to post message.' });
+    // Validate all required fields exist
+    if (!sender || !text || !timestamp) {
+      return res.status(400).json({ error: 'Missing required fields.' });
     }
+
+    // Strict validation and sanitization
+    const validation = validateDMMessage({ sender, text, timestamp });
+    if (!validation.isValid || validation.text !== text) {
+      return res
+        .status(400)
+        .json({ error: 'Message contains invalid content.' });
+    }
+
+    // Secure path handling
+    const sanitizedUser = user.replace(/[^\w\-]/g, '');
+    const filePath = path.resolve(DM_DIR, `${sanitizedUser}.log`);
+
+    if (!filePath.startsWith(path.resolve(DM_DIR) + path.sep)) {
+      throw new Error('Path traversal attempt');
+    }
+
+    // Verify target file
+    if (!fs.existsSync(filePath)) {
+      return res.status(404).json({ error: 'DM not found.' });
+    }
+
+    const stat = fs.statSync(filePath);
+    if (!stat.isFile()) {
+      throw new Error('Invalid file type');
+    }
+
+    // Secure message formatting
+    const line = formatMessageLine(sender, timestamp, text);
+
+    // Atomic write
+    fs.appendFileSync(filePath, line, {
+      encoding: 'utf-8',
+      flag: 'a',
+    });
+
+    return res.status(201).json({ success: true });
+  } catch (err) {
+    console.error('DM post error:', err);
+    return res.status(500).json({ error: 'Failed to post message.' });
+  }
 };
