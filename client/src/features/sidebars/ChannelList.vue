@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isLoading" class="flex flex-col h-auto">
+  <div class="flex flex-col h-auto">
     <!-- Channels Accordion -->
     <div class="cursor-pointer flex justify-between items-center mb-1">
       <div @click="showChannels = !showChannels" class="w-full">
@@ -79,21 +79,36 @@ import { ref, onMounted, computed, nextTick } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import api from '@/services/api';
 import { setLastViewed, hasUnread } from '@/helpers/storage';
-import { useChannelsStore } from '@/shared/stores/channels.js';
-import { storeToRefs } from 'pinia';
-const store = useChannelsStore();
+
 const router = useRouter();
 const route = useRoute();
-const { channels, latestChannelTimestamps, hasFetched } = storeToRefs(store);
 
+const channels = ref([]);
+const latestChannelTimestamps = ref({});
 const activeChannel = computed(() => route.params.name);
-const isLoading = computed(() => hasFetched);
-console.log(isLoading, ' isLoading');
 const showChannels = ref(true);
 const showPopover = ref(false);
 const newChannelName = ref('');
 const newChannelInput = ref(null);
 const errorMessage = ref('');
+
+const fetchChannels = async () => {
+  try {
+    const response = await api.get('/channels');
+    channels.value = response.data;
+  } catch (err) {
+    console.error('Failed to load channels', err);
+  }
+};
+
+const fetchLatestTimestamps = async () => {
+  try {
+    const response = await api.get('/channels/latest');
+    latestChannelTimestamps.value = response.data.channels || {};
+  } catch (err) {
+    console.error('Failed to load latest timestamps:', err);
+  }
+};
 
 const goToChannel = (name) => {
   setLastViewed(`channel:${name}`);
@@ -131,6 +146,7 @@ const createChannel = async () => {
 
   try {
     await api.post('/channels', { name });
+    await fetchChannels();
     hidePopover();
     router.push(`/channel/${name}`);
   } catch (err) {
@@ -139,6 +155,7 @@ const createChannel = async () => {
 };
 
 onMounted(() => {
-  store.fetchLatestTimestamps();
+  fetchChannels();
+  fetchLatestTimestamps();
 });
 </script>
