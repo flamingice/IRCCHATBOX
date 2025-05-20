@@ -10,12 +10,16 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "concurrently": "^6.0.0"
+    "concurrently": "^6.0.0",
+    "lucide-vue-next": "^0.511.0",
+    "pinia": "^3.0.2"
   },
   "devDependencies": {
     "eslint": "^9.21.0",
     "eslint-config-prettier": "^10.0.2",
     "eslint-plugin-prettier": "^5.2.3",
-    "prettier": "^3.5.3"
+    "eslint-plugin-vue": "^10.1.0",
+    "prettier": "^3.5.3",
+    "vite-plugin-vue-devtools": "^7.7.6"
   }
 }
