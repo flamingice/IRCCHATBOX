@@ -25,8 +25,6 @@
 import { computed, nextTick, onMounted, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
 
-import TopNav from '@/components/Layout/TopNav.vue';
-import RightSidebar from '@/components/Layout/RightSidebar.vue';
 import InputBar from '@/components/InputBar.vue';
 
 import api from '@/services/api';
