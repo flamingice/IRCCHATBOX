@@ -23,12 +23,16 @@
           {{ link.label }}
         </RouterLink>
       </template>
+      <button type="button">
+        <Settings />
+      </button>
     </div>
   </nav>
 </template>
 
 <script setup>
 import { useRoute, RouterLink } from 'vue-router';
+import { Settings } from 'lucide-vue-next';
 
 const route = useRoute();
 

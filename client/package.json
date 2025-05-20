@@ -1,7 +1,7 @@
 {
   "name": "client",
   "private": true,
-  "type":"module",
+  "type": "module",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -11,13 +11,14 @@
     "format": "prettier --write '**/*.{js,vue}'"
   },
   "dependencies": {
+    "@vueuse/core": "^13.2.0",
     "axios": "^1.9.0",
+    "concurrently": "^6.0.0",
     "date-fns": "^4.1.0",
+    "lucide-vue": "^0.511.0",
     "tailwindcss": "^2.0.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.1",
-    "@vueuse/core": "^13.2.0",
-    "concurrently": "^6.0.0",
     "vue3-emoji-picker": "^1.1.8"
   },
   "devDependencies": {
