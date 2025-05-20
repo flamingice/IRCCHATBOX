@@ -31,10 +31,8 @@
 </template>
 
 <script setup>
-import { useRoute, RouterLink } from 'vue-router';
+import { RouterLink } from 'vue-router';
 import { Settings } from 'lucide-vue-next';
-
-const route = useRoute();
 
 const navLinks = [
   { label: 'Home', to: '/channel/general', url: '/channel/' },

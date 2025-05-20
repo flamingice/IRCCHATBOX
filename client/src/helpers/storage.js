@@ -13,3 +13,17 @@ export const hasUnread = (key, lastMessageTime) => {
 
   return new Date(lastMessageTime) > new Date(lastViewed);
 };
+
+export function getAllLastViewedItems() {
+  const result = {};
+
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+
+    if (key && key.startsWith('lastViewed:')) {
+      result[key] = localStorage.getItem(key);
+    }
+  }
+
+  return result;
+}

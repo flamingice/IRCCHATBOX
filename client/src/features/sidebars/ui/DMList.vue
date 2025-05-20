@@ -70,44 +70,33 @@
 </template>
 
 <script setup>
-import { ref, onMounted, computed, nextTick } from 'vue';
+import { ref, onMounted, computed, nextTick, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import api from '@/services/api';
-import { setLastViewed, hasUnread } from '@/helpers/storage';
+import api from '@/services/api.js';
+import { setLastViewed, hasUnread } from '@/helpers/storage.js';
+import { useDirectMessagesStore } from '@/shared/stores/directMessages.js';
+import { useChannelsStore } from '@/shared/stores/channels.js';
+import { CHAT_TYPES } from '@/shared/constants/chat.js';
 
 const router = useRouter();
 const route = useRoute();
 
-const dmUsers = ref([]);
 const showDMs = ref(true);
 const showDMPopover = ref(false);
-const activeUser = computed(() => route.params.user);
+const activeUser = computed(() => route.params.name);
+const chat = computed(() => route.params.chat);
 const newDMUser = ref('');
 const newDMInput = ref(null);
-const latestDMTimestamps = ref({});
 const errorMessage = ref('');
 
-const fetchDMUsers = async () => {
-  try {
-    const response = await api.get('/dms');
-    dmUsers.value = response.data;
-  } catch (err) {
-    console.error('Failed to load DM users:', err);
-  }
-};
-
-const fetchLatestTimestamps = async () => {
-  try {
-    const response = await api.get('/channels/latest');
-    latestDMTimestamps.value = response.data.dms || {};
-  } catch (err) {
-    console.error('Failed to load latest DM timestamps:', err);
-  }
-};
+const DMStore = useDirectMessagesStore();
+const channelStore = useChannelsStore();
+const latestDMTimestamps = computed(() => DMStore.getLatestTimestamps);
+const dmUsers = computed(() => DMStore.getDMUsers);
 
 const goToDM = (user) => {
-  setLastViewed(`dm:${user}`);
-  router.push(`/dm/${user}`);
+  setLastViewed(`${CHAT_TYPES.DM}:${user}`);
+  router.push(`/${CHAT_TYPES.DM}/${user}`);
 };
 
 const toggleDMPopover = async () => {
@@ -141,16 +130,16 @@ const createDM = async () => {
 
   try {
     await api.post('/dms', { name });
-    await fetchDMUsers();
     hideDMPopover();
-    router.push(`/dm/${name}`);
+    router.push(`/${CHAT_TYPES.DM}/${name}`);
   } catch (err) {
     errorMessage.value = err.response?.data?.error || 'Failed to create DM.';
   }
 };
-
-onMounted(() => {
-  fetchDMUsers();
-  fetchLatestTimestamps();
+onMounted(() => {});
+watch([chat, activeUser], () => {
+  setLastViewed(`${chat.value}:${activeUser.value}`);
+  DMStore.fetchLatestTimestamps();
+  channelStore.fetchLatestTimestamps();
 });
 </script>
