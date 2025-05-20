@@ -1,47 +1,18 @@
-<style scoped>
-.fade-enter-active {
-  transition: opacity 0.3s ease;
-}
-.fade-leave-active {
-  transition: opacity 0.1s ease;
-}
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-.fade-enter-to,
-.fade-leave-from {
-  opacity: 1;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.spinner {
-  animation: spin 1s linear infinite;
-}
-</style>
 <template>
-  <div class="flex flex-col h-screen overflow-hidden relative">
+  <div class="flex flex-col h-screen overflow-hidden">
     <div class="flex flex-1 overflow-hidden">
       <!-- Main Chat Area -->
       <div class="flex flex-col flex-1 overflow-hidden">
         <!-- ChatView centered and scrollable -->
         <div ref="chatContainer" class="flex flex-1 overflow-y-auto">
-          <div v-if="isFetched" :key="channelName" class="w-full max-w-3xl px-4 mx-auto">
-            <Chat :title="`#${channelName}`" :messages="messages" />
+          <div class="w-full max-w-3xl px-4">
+            <Chat :title="`#${route.params.name}`" :messages="messages" />
           </div>
         </div>
 
-        <!-- Centered InputBar -->
+        <!--  Centered InputBar -->
         <div class="flex bg-white py-2 px-4 border-t">
-          <div class="w-full max-w-3xl mx-auto">
+          <div class="w-full max-w-3xl">
             <InputBar @send="handleNewMessage" />
           </div>
         </div>
@@ -52,23 +23,35 @@
 
 <script setup>
 import { computed, nextTick, onMounted, ref, watch } from 'vue';
-import InputBar from '@/components/InputBar.vue';
 import { useRoute } from 'vue-router';
-import { useChannelsStore } from '@/shared/stores/channels';
+
+import TopNav from '@/components/Layout/TopNav.vue';
+import RightSidebar from '@/components/Layout/RightSidebar.vue';
+import InputBar from '@/components/InputBar.vue';
 
 import api from '@/services/api';
 import Chat from '@/widgets/Chat/ui/Chat.vue';
-import { storeToRefs } from 'pinia';
-import { useMessagesStore } from '@/shared/stores/messages';
+import { getContrastDarkColor, getRandomDarkColor } from '@/shared/libs/utils/color';
 
 const route = useRoute();
-const store = useChannelsStore();
-const messagesStore = useMessagesStore();
+const channelName = computed(() => route.params.name);
+const messages = ref([]);
 const chatContainer = ref(null);
 
-const { messages, hasFetchedMessages } = storeToRefs(messagesStore);
-const channelName = computed(() => store.getChannelName(route.params.name));
-const isFetched = computed(() => hasFetchedMessages);
+const fetchMessages = async () => {
+  try {
+    const youMessageColor = getRandomDarkColor();
+    const respondentMessageColor = getContrastDarkColor(youMessageColor);
+    const response = await api.get(`/channels/${channelName.value}`);
+    messages.value = response.data.map((item, idx) => {
+      item.color = idx % 2 === 0 ? respondentMessageColor : youMessageColor;
+      return item;
+    });
+  } catch (err) {
+    console.error('Failed to load messages:', err);
+    messages.value = [];
+  }
+};
 
 const handleNewMessage = async (msg) => {
   try {
@@ -87,14 +70,21 @@ function scrollToBottom() {
   el.scrollTop = el.scrollHeight;
 }
 
+const uniqueUsers = computed(() => {
+  const seen = new Set();
+  return messages.value
+    .map((msg) => msg.user)
+    .filter((user) => user && user !== 'system' && !seen.has(user) && seen.add(user));
+});
+
 watch(channelName, async () => {
-  await messagesStore.fetchMessages(route.params.name);
+  await fetchMessages();
   await nextTick();
   scrollToBottom();
 });
 
 onMounted(async () => {
-  await messagesStore.fetchMessages(route.params.name);
+  await fetchMessages();
   await nextTick();
   scrollToBottom();
 });
