@@ -30,7 +30,7 @@ import RightSidebar from '@/components/Layout/RightSidebar.vue';
 import InputBar from '@/components/InputBar.vue';
 
 import api from '@/services/api';
-import Chat from '@/features/Chat/ui/Chat.vue';
+import Chat from '@/widgets/Chat/ui/Chat.vue';
 import { getContrastDarkColor, getRandomDarkColor } from '@/shared/libs/utils/color';
 
 const route = useRoute();

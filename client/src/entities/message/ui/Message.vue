@@ -1,7 +1,7 @@
 <template>
   <div class="relative pr-6 group">
     <span class="text-gray-800 ml-1 p-1 transition-colors rounded-md">
-      {{ msg.text }}
+      {{ text }}
     </span>
 
     <!-- Reaction display -->
@@ -44,11 +44,10 @@
 import EmojiPicker from 'vue3-emoji-picker';
 import 'vue3-emoji-picker/css';
 import { useEmojiReaction } from '../model/useEmojiReaction';
-import AddReactionIcon from '@/shared/assets/add-reaction.svg';
 import EmojiButton from '@/shared/ui/EmojiButton.vue';
 
 const props = defineProps({
-  msg: Object,
+  text: String,
   index: Number,
   activePickerIndex: Number
 });
