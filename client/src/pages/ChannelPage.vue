@@ -6,7 +6,7 @@
         <!-- ChatView centered and scrollable -->
         <div ref="chatContainer" class="flex flex-1 overflow-y-auto">
           <div class="w-full max-w-3xl px-4">
-            <Chat :messages="messages" />
+            <Chat :title="`#${route.params.name}`" :messages="messages" />
           </div>
         </div>
 
