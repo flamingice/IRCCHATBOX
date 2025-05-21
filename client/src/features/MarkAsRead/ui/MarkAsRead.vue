@@ -24,7 +24,6 @@ function markAsRead() {
 <template>
   <button :onclick="markAsRead" type="button" class="flex items-center gap-2 my-1.5 w-fit">
     <MailCheck :size="16" />
-    <span class="text-sm">Mark all as read</span>
   </button>
 </template>
 

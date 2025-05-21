@@ -3,7 +3,7 @@
     <div class="flex items-center gap-2">
       <img src="/ircchatboxlogo.png" class="h-6 w-auto" alt="logo" />
     </div>
-    <div class="flex gap-6 text-sm text-gray-600">
+    <div class="flex gap-6 items-center text-sm text-gray-600">
       <template v-for="link in navLinks" :key="link.to">
         <!-- Dummy links (no routing) -->
         <span
@@ -23,8 +23,13 @@
           {{ link.label }}
         </RouterLink>
       </template>
-      <button type="button">
-        <Settings />
+      <ToggleTheme />
+      <button
+        @click="handleClick"
+        class="p-2 rounded-md transition-colors duration-200 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300"
+        aria-label="Settings"
+      >
+        <Settings class="h-5 w-5" />
       </button>
     </div>
   </nav>
@@ -33,6 +38,7 @@
 <script setup>
 import { RouterLink } from 'vue-router';
 import { Settings } from 'lucide-vue-next';
+import ToggleTheme from '@/features/ToggleTheme/ToggleTheme.vue';
 
 const navLinks = [
   { label: 'Home', to: '/channel/general', url: '/channel/' },
