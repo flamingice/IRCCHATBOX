@@ -4,14 +4,14 @@
       <!-- Chat Area -->
       <div class="flex flex-col flex-1 overflow-hidden">
         <div ref="chatContainer" class="flex flex-1 overflow-y-auto">
-          <div v-if="isFetched" class="w-full max-w-3xl px-4 mx-auto">
+          <div v-if="isFetched" class="w-full px-4 mx-auto">
             <Chat :title="chatTitle" :messages="messages" />
           </div>
         </div>
 
         <!-- Input Bar -->
         <div class="flex bg-white py-2 px-4 border-t">
-          <div class="w-full max-w-3xl mx-auto">
+          <div class="w-full mx-auto">
             <InputBar @send="handleNewMessage" />
           </div>
         </div>

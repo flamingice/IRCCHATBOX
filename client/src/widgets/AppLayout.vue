@@ -15,8 +15,8 @@
 
 <script setup>
 import TopNav from '@/features/nav/TopNav.vue';
-import LeftSidebar from '@/widgets/LeftSidebar.vue';
-import RightSidebar from '@/widgets/RightSidebar.vue';
+import LeftSidebar from '@/features/sidebars/ui/Left/LeftSidebar.vue';
+import RightSidebar from '@/features/sidebars/ui/RightSidebar.vue';
 import { computed, inject } from 'vue';
 import { useRoute } from 'vue-router';
 import { useDirectMessagesStore } from '@/shared/stores/directMessages.js';

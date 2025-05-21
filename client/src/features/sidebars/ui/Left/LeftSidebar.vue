@@ -13,16 +13,16 @@
 </template>
 
 <script setup>
-import ChannelList from '../features/sidebars/ui/ChannelList.vue';
-import DMList from '../features/sidebars/ui/DMList.vue';
+import ChannelList from './ChannelList.vue';
+import DMList from './DMList.vue';
 import Search from '@/shared/ui/Input/search.vue';
-import { useChannelsStore } from '@/shared/stores/channels';
-import { useDirectMessagesStore } from '@/shared/stores/directMessages';
+import { useChannelsStore } from '@/shared/stores/channels.js';
+import { useDirectMessagesStore } from '@/shared/stores/directMessages.js';
 import MarkAsRead from '@/features/MarkAsRead/ui/MarkAsRead.vue';
 import { computed, onBeforeMount } from 'vue';
 import { useRouter } from 'vue-router';
-import { setLastViewed } from '@/helpers/storage';
-import { CHAT_TYPES } from '@/shared/constants/chat';
+import { setLastViewed } from '@/helpers/storage.js';
+import { CHAT_TYPES } from '@/shared/constants/chat.js';
 const DMStore = useDirectMessagesStore();
 
 const channelsStore = useChannelsStore();

@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "prepare": "husky",
-    "format": "prettier --write '**/*.{js,vue}'"
+    "format": "prettier --write '**/*.{js,vue}'",
+    "pre-commit": "lint-staged"
   },
   "dependencies": {
     "@vueuse/core": "^13.2.0",
