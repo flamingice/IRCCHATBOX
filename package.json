@@ -7,7 +7,10 @@
     "client": "npm run dev --prefix client",
     "server": "npm run start --prefix server",
     "build": "npm run build --prefix client",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "pre-commit": "yarn workspaces foreach run pre-commit",
+    "postinstall": "husky install"
+
   },
   "dependencies": {
     "concurrently": "^6.0.0",
@@ -19,6 +22,7 @@
     "eslint-config-prettier": "^10.0.2",
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-vue": "^10.1.0",
+    "husky": "^9.1.7",
     "prettier": "^3.5.3",
     "vite-plugin-vue-devtools": "^7.7.6"
   }

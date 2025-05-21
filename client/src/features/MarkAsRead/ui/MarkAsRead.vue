@@ -22,9 +22,13 @@ function markAsRead() {
 </script>
 
 <template>
-  <button :onclick="markAsRead" type="button" class="flex items-center gap-2 my-1.5 w-fit">
+  <button
+    :onclick="markAsRead"
+    type="button"
+    title="Mark all as read"
+    class="flex items-center gap-2 my-1.5 w-fit p-1 rounded-md hover:bg-gray-300"
+  >
     <MailCheck :size="16" />
-    <span class="text-sm">Mark all as read</span>
   </button>
 </template>
 
