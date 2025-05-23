@@ -1,13 +1,13 @@
 <template>
   <div class="relative pr-6 group">
-    <span class="text-gray-800 ml-1 p-1 transition-colors rounded-md">
+    <span class="dark:text-white/80 text-gray-800 ml-1 p-1 transition-colors rounded-md">
       {{ text }}
     </span>
 
     <!-- Reaction display -->
     <div
       v-if="reaction"
-      class="text-sm absolute -top-5 -right-2 px-2 py-1 w-min bg-gray-200 rounded-xl"
+      class="text-sm absolute -top-5 -right-2 px-2 py-1 w-min dark:bg-darkBlue bg-gray-200 rounded-xl"
     >
       <span @click="clearReaction" class="cursor-pointer">
         {{ reaction }}

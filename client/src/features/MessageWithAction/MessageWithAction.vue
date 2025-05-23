@@ -21,17 +21,21 @@ defineProps({
 
 <template>
   <div v-if="user === 'system'" class="text-gray-500 italic">
-    <span class="text-gray-400 w-[70px] inline-block">{{ formatTime(timestamp) }}</span>
+    <span class="dark:text-white/70 text-gray-400 w-[70px] inline-block">{{
+      formatTime(timestamp)
+    }}</span>
     * {{ text }}
   </div>
 
   <template v-else>
     <div class="flex items-center gap-1 group">
       <!-- time -->
-      <span class="text-gray-600 w-[70px] inline-block">{{ formatTime(timestamp) }}</span>
-      <span class="text-black">|</span>
+      <span class="dark:text-white text-gray-600 w-[70px] inline-block">{{
+        formatTime(timestamp)
+      }}</span>
+      <span class="text-black dark:text-white">|</span>
       <!-- row -->
-      <div class="flex rounded-md py-1 hover:bg-gray-300">
+      <div class="flex rounded-md py-1 hover:bg-gray-300 dark:hover:bg-gray-700">
         <div class="ml-2 flex items-center">
           <!-- username -->
           <TriggerWithCard

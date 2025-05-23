@@ -1,12 +1,16 @@
 <template>
-  <div class="border-l p-4 bg-white overflow-y-auto text-sm">
-    <h3 class="text-sm font-semibold mb-4 text-gray-800">
+  <div class="border-l p-4 dark:bg-darkBlue bg-white overflow-y-auto text-sm">
+    <h3 class="text-sm font-semibold mb-4 dark:text-white/70 text-gray-800">
       <span v-if="isDM">Direct Chat</span>
       <span v-else>{{ users.length }} participants</span>
     </h3>
 
     <ul class="space-y-1">
-      <li v-for="user in users" :key="user" class="flex items-center gap-2 text-gray-800">
+      <li
+        v-for="user in users"
+        :key="user"
+        class="flex items-center gap-2 dark:hover:text-gray-200 dark:text-white/60 text-gray-800"
+      >
         <span
           :class="[
             'w-2 h-2 rounded-full',

@@ -143,13 +143,16 @@ watch(
 }
 
 .search-input {
+  @apply w-full;
   width: 100%;
   padding: 8px 32px 8px 12px;
-  border: 1px solid #e2e8f0;
+  border-width: 1px;
+  border-style: solid;
   border-radius: 4px;
   font-size: 14px;
   outline: none;
   transition: border-color 0.2s;
+  @apply dark:border-gray-950 border-darkBlue text-black dark:text-[#e2e8f0] bg-[#e2e8f0] dark:bg-darkBlue;
 }
 
 .search-input:focus {
@@ -175,12 +178,11 @@ watch(
 }
 
 .search-results {
+  @apply bg-white dark:bg-darkBlue border-solid border dark:border-gray-950 border-darkBlue;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: white;
-  border: 1px solid #e2e8f0;
   border-radius: 4px;
   margin-top: 4px;
   box-shadow:
@@ -194,10 +196,10 @@ watch(
 .section-title {
   font-size: 12px;
   font-weight: 600;
-  color: #64748b;
   padding: 8px 12px;
-  background-color: #f8fafc;
-  border-bottom: 1px solid #e2e8f0;
+  @apply bg-white dark:bg-darkBlue text-white dark:text-white border-b border-gray-200 dark:border-gray-950;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
   margin: 0;
 }
 
@@ -216,7 +218,7 @@ watch(
 }
 
 .result-item:hover {
-  background-color: #f1f5f9;
+  @apply bg-white/80 dark:bg-[#27272CFF];
 }
 
 .channel-icon {
@@ -229,7 +231,7 @@ watch(
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #cbd5e1;
+  @apply bg-[#cbd5e1] dark:bg-[#16161B];
   margin-right: 8px;
 }
 
@@ -239,10 +241,10 @@ watch(
 
 .result-name {
   font-size: 14px;
-  color: #334155;
+  @appy text-white dark:text-darkBlue;
 }
 
 .result-section:not(:last-child) {
-  border-bottom: 1px solid #e2e8f0;
+  @apply border-b border-gray-200 dark:border-gray-950;
 }
 </style>

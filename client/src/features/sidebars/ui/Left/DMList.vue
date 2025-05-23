@@ -54,8 +54,8 @@
         :key="user"
         @click="goToDM(user)"
         :class="[
-          'cursor-pointer px-2 py-1 rounded hover:bg-gray-200 flex justify-between',
-          user === activeUser ? 'font-bold text-black' : 'text-gray-800'
+          'cursor-pointer px-2 py-1 rounded hover:bg-gray-200 dark:hover:text-darkBlue flex justify-between',
+          user === activeUser ? 'font-bold text-black dark:text-white' : 'dark:text-gray-300'
         ]"
       >
         <span>@ {{ user }}</span>

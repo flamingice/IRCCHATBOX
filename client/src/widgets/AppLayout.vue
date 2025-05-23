@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col h-screen">
     <TopNav />
-    <div class="flex flex-1 overflow-hidden">
+    <div class="before:border-none after:border-none flex flex-1 overflow-hidden">
       <LeftSidebar />
 
       <div class="flex flex-col flex-1 overflow-hidden">

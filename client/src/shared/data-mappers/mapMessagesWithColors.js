@@ -1,7 +1,11 @@
-import { getContrastDarkColor, getRandomDarkColor } from '@/shared/libs/utils/color.js';
+import {
+  getContrastDarkColor,
+  getRandomDarkColor,
+  getRandomLightColor
+} from '@/shared/libs/utils/color.js';
 
-export function mapMessagesWithColors(rawMessages = []) {
-  const youColor = getRandomDarkColor();
+export function mapMessagesWithColors(rawMessages = [], isDark) {
+  const youColor = isDark ? getRandomLightColor() : getRandomDarkColor();
   const respondentColor = getContrastDarkColor(youColor);
 
   return rawMessages.map((msg, idx) => ({

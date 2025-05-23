@@ -21,25 +21,28 @@
 
         <div
           v-if="showPopover"
-          class="absolute top-7 left-0 z-50 bg-white border rounded shadow-lg p-4 w-max"
+          class="absolute top-7 left-0 z-50 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-950 rounded shadow-lg p-4 w-max"
         >
-          <h3 class="text-sm font-semibold mb-2">New Channel</h3>
+          <h3 class="text-sm font-semibold mb-2 text-gray-800 dark:text-gray-100">New Channel</h3>
           <input
             ref="newChannelInput"
             v-model="newChannelName"
             type="text"
             placeholder="e.g. news"
-            class="w-full px-2 py-1 border rounded mb-2 text-sm"
+            class="w-full px-2 py-1 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-100 rounded mb-2 text-sm"
             @keyup.enter="createChannel"
           />
           <div class="flex flex-col">
             <div class="flex justify-end gap-2">
-              <button @click="hidePopover" class="text-xs px-2 py-1 bg-gray-200 rounded">
+              <button
+                @click="hidePopover"
+                class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-600 text-gray-800 dark:text-gray-100 rounded"
+              >
                 Cancel
               </button>
               <button
                 @click="createChannel"
-                class="text-xs px-2 py-1 bg-blue-500 text-white rounded"
+                class="text-xs px-2 py-1 bg-blue-500 hover:bg-blue-600 text-white dark:text-white rounded"
               >
                 Create
               </button>
@@ -56,8 +59,10 @@
         :key="channel"
         @click="goToChannel(channel)"
         :class="[
-          'cursor-pointer px-2 py-1 rounded hover:bg-gray-200 flex justify-between',
-          channel === activeChannel ? 'font-bold text-black' : 'text-gray-800'
+          'cursor-pointer px-2 py-1 rounded dark:hover:text-darkBlue hover:bg-gray-200 flex justify-between',
+          channel === activeChannel
+            ? 'font-bold text-black dark:text-white'
+            : 'text-gray-800 dark:text-gray-400'
         ]"
       >
         <span># {{ channel }}</span>

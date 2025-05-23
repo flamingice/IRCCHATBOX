@@ -3,3 +3,25 @@
 @tailwind utilities;
 
 /* Your existing styles can go below */
+
+body {
+    @apply dark:bg-darkBlue;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply dark:bg-darkBlue
+}
+
+::-webkit-scrollbar-thumb {
+    @apply dark:bg-gray-300 border border-solid border-gray-950 transition-all rounded;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   @apply hover:bg-gray-500;
+}

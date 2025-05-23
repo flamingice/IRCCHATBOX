@@ -5,5 +5,5 @@ defineProps({
 </script>
 
 <template>
-  <p class="mt-3 text-sm text-gray-600">{{ bio }}</p>
+  <p class="mt-3 dark:text-white text-sm text-gray-600">{{ bio }}</p>
 </template>

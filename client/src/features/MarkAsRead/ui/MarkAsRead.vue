@@ -26,7 +26,7 @@ function markAsRead() {
     :onclick="markAsRead"
     type="button"
     title="Mark all as read"
-    class="flex items-center gap-2 my-1.5 w-fit p-1 rounded-md hover:bg-gray-300"
+    class="flex items-center gap-2 my-1.5 w-fit p-1 rounded-md hover:bg-darkBlue/30 dark:hover:bg-gray-300/40"
   >
     <MailCheck :size="16" />
   </button>

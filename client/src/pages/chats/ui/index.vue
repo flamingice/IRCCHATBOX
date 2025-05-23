@@ -10,7 +10,7 @@
         </div>
 
         <!-- Input Bar -->
-        <div class="flex bg-white py-2 px-4 border-t">
+        <div class="border-t dark:border-t-gray-950 flex dark:bg-darkBlue bg-white py-2 px-4">
           <div class="w-full mx-auto">
             <InputBar @send="handleNewMessage" />
           </div>
@@ -28,15 +28,16 @@ import { storeToRefs } from 'pinia';
 import Chat from '@/widgets/Chat/ui/Chat.vue';
 import InputBar from '@/components/InputBar.vue';
 
-import api from '@/services/api.js';
-import { useChannelsStore } from '@/shared/stores/channels.js';
-import { useMessagesStore } from '@/shared/stores/messages.js';
-import { useDirectMessagesStore } from '@/shared/stores/directMessages.js';
+import api from '@/services/api';
+import { useChannelsStore } from '@/shared/stores/channels';
+import { useMessagesStore } from '@/shared/stores/messages';
+import { useDirectMessagesStore } from '@/shared/stores/directMessages';
 import { CHAT_TYPES } from '@/shared/constants/chat';
+import { useTheme } from '@/shared/stores/composables/useTheme';
 
 const route = useRoute();
 const chatContainer = ref(null);
-
+const { isDark } = useTheme();
 // Route params
 const chatType = computed(() => route.params.chat); // 'channel' or 'dm'
 const slug = computed(() => route.params.name); // channel name or username
@@ -69,9 +70,9 @@ const scrollToBottom = () => {
 
 const fetchAndScroll = async () => {
   if (isChannel.value) {
-    await messagesStore.fetchMessages(slug.value);
+    await messagesStore.fetchMessages(slug.value, isDark);
   } else {
-    await dmsStore.fetchDMs(slug.value);
+    await dmsStore.fetchDMs(slug.value, isDark);
   }
   await nextTick();
   scrollToBottom();
