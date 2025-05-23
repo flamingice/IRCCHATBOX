@@ -1,5 +1,7 @@
 <template>
-  <div class="h-full border-r bg-gray-100 p-4 flex flex-col relative">
+  <div
+    class="h-full border-r dark:border-r-gray-950 bg-gray-100 dark:bg-darkBlue text-black dark:text-white p-4 flex flex-col relative"
+  >
     <MarkAsRead />
     <Search
       @select-direct-message="selectDirectMessage"

@@ -6,6 +6,14 @@ export function getRandomDarkColor() {
   return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
 }
 
+export function getRandomLightColor() {
+  const colorLightenLevel = 128; // Add this if not defined elsewhere
+  const r = Math.floor(Math.random() * colorLightenLevel) + colorLightenLevel; // 128–255
+  const g = Math.floor(Math.random() * colorLightenLevel) + colorLightenLevel; // 128–255
+  const b = Math.floor(Math.random() * colorLightenLevel) + colorLightenLevel; // 128–255
+  return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
+}
+
 export function getContrastDarkColor(baseColor) {
   const hexToRgb = (hex) => {
     hex = hex.replace(/^#/, '');

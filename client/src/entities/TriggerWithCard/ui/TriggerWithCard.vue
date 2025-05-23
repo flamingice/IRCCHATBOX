@@ -15,7 +15,7 @@
       <div
         v-if="showCard"
         ref="cardRef"
-        class="absolute top-0 z-50 w-max bg-white rounded-lg shadow-lg border border-gray-200 p-4 mt-1"
+        class="absolute top-0 z-50 w-max dark:bg-gray-950 bg-white rounded-lg shadow-lg border dark:border-darkBlue border-gray-200 p-4 mt-1"
         :style="cardPosition"
         @mouseenter="clearHideTimeout"
         @mouseleave="hideCard"

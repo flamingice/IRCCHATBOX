@@ -10,14 +10,14 @@ export const useDirectMessagesStore = defineStore('directMessages', {
     latestDMTimestamps: []
   }),
   actions: {
-    async fetchDMs(username) {
+    async fetchDMs(username, isDark) {
       try {
         if (!username) {
           return [];
         }
         this.hasFetchedMessages = false;
         const response = await api.get(`/dms/${username}`);
-        this.directMessages = mapMessagesWithColors(response.data);
+        this.directMessages = mapMessagesWithColors(response.data, isDark);
         this.hasFetchedMessages = true;
         return this.directMessages;
       } catch (err) {
